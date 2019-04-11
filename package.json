@@ -1,14 +1,14 @@
 {
-  "name": "bootstrap-with-gulp",
+  "name": "bootstrap-sample",
   "version": "1.0.0",
-  "description": "clear bootsrap install with gulp config",
+  "description": "sample project with bootstrap and BEM methodology",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lukassso/bootstrap-with-gulp.git"
+    "url": "git+https://github.com/lukassso/bootstrap-sample.git"
   },
   "keywords": [
     "bootstrap",
@@ -17,10 +17,8 @@
   ],
   "author": "lk",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/lukassso/bootstrap-with-gulp/issues"
-  },
-  "homepage": "https://github.com/lukassso/bootstrap-with-gulp#readme",
+  "bugs": {},
+  "homepage": "https://github.com/lukassso/bootstrap-sample.git#readme",
   "dependencies": {
     "@fortawesome/fontawesome-free": "5.8.1",
     "bootstrap": "4.3.1",

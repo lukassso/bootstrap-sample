@@ -1,0 +1,39 @@
+// mixin wyśrodkowanie elementu - auto marginesy
+
+div {
+    margin-top: 1rem;
+    @include margin-auto;
+  }
+
+//  mixin tworzenia gradientu
+.gradient {
+    @include background-gradient(#3498db, #2c3e50, horizontal);
+  }
+// mixin center - wyśrodkowanie elementu na 3 sposoby: w pionie (vertical), poziomie (horizontal) i całkowicie (both)
+  .parent {
+    position: relative;
+    .child {
+      @include center(both);
+    }
+  }
+
+  // mixin do fontu
+  @include font-face('MuseoSans', '/fonts/MuseoSans');
+
+  // mixin fo wyświatlania obrazka na retinie
+  .site-logo {
+    background-image: url("img/logo.png");
+    @include retina("img/retina/logo.png", 100px, 21px);
+ }
+ 
+// mixina generowania reguł media queries
+ .sidebar {
+    display: none;
+    @include screen('tablet') {
+      display: block;
+      width: 20%;
+    }
+    @include screen('desktop') {
+      width: 30%;
+    }
+  }

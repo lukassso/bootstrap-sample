@@ -16,3 +16,9 @@ $black: #000 !default;
 
 $primary: rgb(70, 9, 57) !default;
 $secondary: #f5d2f0 !default;
+
+//media querry
+
+$desktop: "(min-width: 1024px)";
+$tablet: "(min-width: 768px)";
+$mobile: "(min-width: 460px)";
