@@ -17,10 +17,10 @@ function browserSync(done) {
   browsersync.init({
     server: {
       baseDir: "./"
-    },
-    socket: {
-      domain: "localhost:3000"
-  }
+    }
+  //   socket: {
+  //     domain: "localhost:3001"
+  // }
   });
   done();
 }
@@ -87,16 +87,23 @@ function css() {
 // JS task
 function js() {
   return gulp
-    .src([
-      './js/*.js',
-      '!./js/*.min.js'
-    ])
+    .src(
+      'js/*js',
+    '!./js/**/*.min.js',
+    )
+    .pipe(browsersync.stream())
     .pipe(uglify())
     .pipe(rename({
       suffix: '.min'
     }))
     .pipe(gulp.dest('./js'))
-    .pipe(browsersync.stream());
+   
+
+  // return gulp.src('js/*js')
+  // .pipe(browsersync.stream());
+  //       // .pipe(browserify())
+  //       // .pipe(uglify())
+  //       // .pipe(gulp.dest('./js'));
 }
 
 // Watch files
