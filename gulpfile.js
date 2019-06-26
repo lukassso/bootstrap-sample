@@ -88,17 +88,18 @@ function css() {
 function js() {
   return gulp
     .src(
-      'js/*js',
-    '!./js/**/*.min.js',
+      'js/script.js',
+    // 'js/script.min.js'
     )
-    .pipe(browsersync.stream())
+    .pipe(plumber())
+    
     .pipe(uglify())
     .pipe(rename({
       suffix: '.min'
     }))
-    .pipe(gulp.dest('./js'))
-   
 
+    .pipe(gulp.dest('./js/'))
+    .pipe(browsersync.stream());
   // return gulp.src('js/*js')
   // .pipe(browsersync.stream());
   //       // .pipe(browserify())
@@ -109,7 +110,7 @@ function js() {
 // Watch files
 function watchFiles() {
   gulp.watch("./scss/**/*", css);
-  gulp.watch("./js/**/*", js);
+  gulp.watch("./js/script.js", js);
   gulp.watch("./**/*.html", browserSyncReload);
 }
 
