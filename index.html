@@ -46,8 +46,8 @@
 <body>
   <!-- Navigation -->
 
-  <nav class="navbar navbar-expand navbar-light bg-nav">
-    <a class="navbar-brand mr-0 mr-md-2" href="/" aria-label="Bootstrap">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/">
 
       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
         x="0px" y="0px" width="170px" height="60px" viewBox="0 0 330.611 90.911"
@@ -114,16 +114,19 @@
         </g>
       </svg>
     </a>
-    <div class="collapse navbar-collapse justify-content-end">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo01">
       <ul class="navbar-nav ">
         <li class="nav-item">
-          <a class="nav-link" href="#">Home</a>
+          <a class="nav-link active" href="#">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Your projects</a>
         </li>
         <li class="nav-item" href="#">
-          <a class="nav-link active">Your job offers</a>
+          <a class="nav-link">Your job offers</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Your profile</a>
@@ -146,25 +149,20 @@
 
       <!--Background user header -->
       <div class="container-fluid header-userAccount">
+         <!--User picture -->
           <div class="header__user-picture col-4 mx-auto d-block zindex-dropdown">        
-              <img src="https://unsplash.it/120/120" class="rounded-circle mx-auto d-block" alt="...">
+              <img src="https://unsplash.it/120/120" class="rounded-circle mx-auto mb-2 d-block" alt="...">
             <h3 class="text-center">Grażyna Kowalska</h3>
             <p class="text-center">Warsaw, Poland</p>         
         </div>
       </div>
       <div class="container-fluid header-photoUser mb-5">
-
-
-          
-        
-          <div class="d-flex flex-row-reverse">
-              <button class="btn btn-primary" href="/" type="submit">Add project</button>
-              <button class="btn btn-primary" href="#" type="submit">Add job offer</button>
+         <!-- adds buttons -->
+          <div class="d-flex flex-row-reverse p-3 mr-5">
+              <button class="btn btn-primary m-2" href="/" type="submit">Add project</button>
+              <button class="btn btn-primary m-2" href="#" type="submit">Add job offer</button>
             </div>
       </div>
-
-      <!--User picture -->
-   
       </div>
     </header>
   </main>
@@ -177,7 +175,7 @@
         <div class="container">
           <div class="row justify-content-start sidebar sidebar__search">
 
-            <h5>Search Projects</h5>
+            <h5 class="mb-4">Search Projects</h5>
             <div class="form-group mb-3">
               <label for="exampleFormControlSelect1">Choose City</label>
               <select class="form-control" id="exampleFormControlSelect1">
@@ -195,7 +193,7 @@
         <!--search interest-->
         <div class="container">
           <div class="row justify-content-start sidebar sidebar__interest">
-            <h5>Your interest</h5>
+            <h5 class="mb-4">Your interest</h5>
             <div class="input-group mb-3">
               <input type="text" class="form-control" placeholder="Add interest">
               <div class="input-group-append">
@@ -215,13 +213,13 @@
         <!--search apointment-->
         <div class="container">
           <div class="row justify-content-start sidebar sidebar__apointment">
-            <h5>Your next appointments</h5>
+            <h5 class="mb-4">Your next appointments</h5>
             <div class="sidebar__apointment-incoming">
-              <h6>Incoming</h6>
+              <h6 class="mb-3">Incoming</h6>
               <div class="row item-apointment">
                 <div class="col-8 item-apointment__data">
                   <div class="apointment-name">
-                    <p>Fashion show site visit</p>
+                    <p class="p-0 m-0">Fashion show site visit</p>
                   </div>
                   <div class="row col-12 item-apointment__time">
                     <p>13 July 2019</p>
@@ -231,14 +229,14 @@
                   <button type="button" class="btn btn-info btn-sm">13:00</button>
                 </div>
                 <div class="col-2">
-                  <button type="button" class="btn btn-primary btn-sm">-</button>
+                  <button type="button" class="btn btn-primary btn-sm">--</button>
                 </div>
               </div>
 
               <div class="row item-apoitment">
                 <div class="col-8 item-apoitment__data">
                   <div class="apointment-name">
-                    <p>Fashion show site visit</p>
+                    <p class="p-0 m-0">Model hairstyle selection</p>
                   </div>
                   <div class="row col-12 item-apointment__time">
                     <p>13 July 2019</p>
@@ -248,7 +246,7 @@
                   <button type="button" class="btn btn-info btn-sm">15:00</button>
                 </div>
                 <div class="col-2">
-                  <button type="button" class="btn btn-primary btn-sm">-</button>
+                  <button type="button" class="btn btn-primary btn-sm">--</button>
                 </div>
               </div>
 
@@ -259,58 +257,54 @@
         <!--search offer job-->
         <div class="container">
           <div class="row justify-content-start sidebar sidebar__recomended-job-offer">
-            <h5>Recommended job offers</h5>
+            <h5 class="mb-4">Recommended job offers</h5>
             <div class="offer-job border rounded mb-3">
-
-
-              <div class="row">
-                <div class="col-2 mr-2">
-                  <img class="rounded-circle" src="https://unsplash.it/50/50" alt="pic">
-                </div>
-
-                <div class="col-10">
-                  <div class="row">
-                    <div class="offer-job-title col-12">Administrator's helper in...</div>
-                    <div class="offer-job-item col-12">#administration #work-office</div>
+                <div class="row">
+                  <div class="col-3">
+                    <img class="rounded-circle p-2" src="https://unsplash.it/50/50" alt="pic">
+                  </div>
+  
+                  <div class="col-9 ml-0 pl-0 mt-2">
+                    <div class="row">
+                      <div class="offer-job-title col-12">Administrator's helper in...</div>
+                      <div class="offer-job-item col-12">#administration #work-office</div>
+                    </div>
+                  </div>
+                  <div class="col-9"><p class="float-right mt-2 mr-2">Add to saved +</p></div>
+                  <div class="col-3">
+                    <button type="button" class="btn btn-outline-primary btn-sm float-right mt-1 mr-3">More</button>
                   </div>
                 </div>
-                <div class="col-6 add-to">Add to saved +</div>
-                <div class="col-6">
-                  <button type="button" class="btn btn-outline-primary btn-sm">More</button>
-                </div>
               </div>
-            </div>
             <div class="button__level-box">
-              <button type="button" class="btn btn-primary btn-block">Update Project</button>
+              <button type="button" class="btn btn-primary btn-block">Find more job offers</button>
             </div>
           </div>
         </div>
       </aside>
 
       <!-- Right column -->
-      <div class="col-8">
+      <main class="col-8">
         <!-- Alert -->
         <div class="alert alert-primary" role="alert">
           A simple primary alert—check it out!
         </div>
         <!-- Bookmarks submenu  -->
-        <ul class="nav mb-3">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Recommend Projects</a>
-          </li>
-        </ul>
-
-
+        <div class="mb-4 mt-3 mainPageLogged-submenu">
+            <h5 class="submenu-tabs">Recommend Projects</h5>
+        </div>
+            
+        
 
         <!-- Offer boxes -->
         <div class="row">
 
           <div class="col-6 offer-card">
             <div class="Offer-card-img no-gutters">
-              <img class="offer-card-img-top " src="https://unsplash.it/350/200" alt="Card image cap">
+              <img class="offer-card-img-top img-fluid " src="https://unsplash.it/350/200" alt="Card image cap">
             </div>
-            <div class="container border rounded-bottom offer-card-body">
-              <h5 class="offer-card-title">Learning how to pain like Picasso </h5>
+            <div class="container border bg-white rounded-bottom offer-card-body">
+              <h5 class="offer-card-title mt-4 mb-2">Learning how to pain like Picasso </h5>
               <div class="row">
                 <div class="col-4">Status:</div>
                 <div class="col-8">The group began to meet </div>
@@ -322,16 +316,16 @@
               <div class="row">
                 <div class="col-7"></div>
                 <div class="col-5">
-                  <a class="btn btn-primary btn-sm" href="#" role="button">More</a>
+                  <a class="btn btn-primary btn-sm m-2 float-right" href="#" role="button">More</a>
                 </div>
               </div>
 
               <div class="upcoming-meet">
-                <h6>Upcoming meetings</h6>
+                <h6 class="mb-3">Upcoming meetings</h6>
                 <div class="row item-apointment">
                   <div class="col-8 item-apointment__data">
                     <div class="apointment-name">
-                      <p>We paint the still life</p>
+                      <p class="p-0 m-0">We paint the still life</p>
                     </div>
                     <div class="row col-12 item-apointment__time">
                       <p>17 July 2019</p>
@@ -341,19 +335,36 @@
                     <button type="button" class="btn btn-info btn-sm">11:00</button>
                   </div>
                   <div class="col-2">
-                    <button type="button" class="btn btn-primary btn-sm">-</button>
+                    <button type="button" class="btn btn-primary btn-sm">--</button>
                   </div>
                 </div>
+                <div class="row item-apointment">
+                    <div class="col-8 item-apointment__data">
+                      <div class="apointment-name">
+                        <p class="p-0 m-0">We paint the still life</p>
+                      </div>
+                      <div class="row col-12 item-apointment__time">
+                        <p>17 July 2019</p>
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <button type="button" class="btn btn-info btn-sm">11:00</button>
+                    </div>
+                    <div class="col-2">
+                      <button type="button" class="btn btn-primary btn-sm">--</button>
+                    </div>
+                  </div>
               </div>
             </div>
           </div>
-         
+
+
           <div class="col-6 offer-card">
               <div class="Offer-card-img no-gutters">
-                <img class="offer-card-img-top" src="https://unsplash.it/350/200" alt="Card image cap">
+                <img class="offer-card-img-top img-fluid " src="https://unsplash.it/350/200" alt="Card image cap">
               </div>
-              <div class="container border rounded-bottom offer-card-body">
-                <h5 class="offer-card-title">Learning how to pain like Picasso </h5>
+              <div class="container border bg-white rounded-bottom offer-card-body">
+                <h5 class="offer-card-title mt-4 mb-2">Bike Trips </h5>
                 <div class="row">
                   <div class="col-4">Status:</div>
                   <div class="col-8">The group began to meet </div>
@@ -365,31 +376,49 @@
                 <div class="row">
                   <div class="col-7"></div>
                   <div class="col-5">
-                    <a class="btn btn-primary btn-sm" href="#" role="button">More</a>
+                    <a class="btn btn-primary btn-sm m-2 float-right" href="#" role="button">More</a>
                   </div>
                 </div>
   
                 <div class="upcoming-meet">
-                  <h6>Upcoming meetings</h6>
+                  <h6 class="mb-3">Upcoming meetings</h6>
                   <div class="row item-apointment">
                     <div class="col-8 item-apointment__data">
                       <div class="apointment-name">
-                        <p>We paint the still life</p>
+                        <p class="p-0 m-0">Trip to Olsztyn</p>
                       </div>
                       <div class="row col-12 item-apointment__time">
-                        <p>17 July 2019</p>
+                        <p>19 August 2019</p>
                       </div>
                     </div>
                     <div class="col-2">
-                      <button type="button" class="btn btn-info btn-sm">11:00</button>
+                      <button type="button" class="btn btn-info btn-sm">09:00</button>
                     </div>
                     <div class="col-2">
-                      <button type="button" class="btn btn-primary btn-sm">-</button>
+                      <button type="button" class="btn btn-primary btn-sm">--</button>
                     </div>
                   </div>
+                  <div class="row item-apointment">
+                      <div class="col-8 item-apointment__data">
+                        <div class="apointment-name">
+                          <p class="p-0 m-0">Trip to park Saski</p>
+                        </div>
+                        <div class="row col-12 item-apointment__time">
+                          <p>20 October 2019</p>
+                        </div>
+                      </div>
+                      <div class="col-2">
+                        <button type="button" class="btn btn-info btn-sm">08:00</button>
+                      </div>
+                      <div class="col-2">
+                        <button type="button" class="btn btn-primary btn-sm">--</button>
+                      </div>
+                    </div>
                 </div>
               </div>
             </div>
+         
+          
 
 
         </div>
@@ -397,12 +426,11 @@
         
 
 
-      </div>
+      </main>
     </div>
 
     <!--  -->
-  </div>
-  </div>
+  
 
 
 
