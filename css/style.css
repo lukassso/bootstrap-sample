@@ -22,6 +22,12 @@ h6 {
   font-weight: 700;
 }
 
+.navbar {
+  border-bottom: 1px solid #593C7E;
+  -webkit-box-shadow: 0 5px 5px #d4c6e6;
+  box-shadow: 0 5px 5px #d4c6e6;
+}
+
 .header__userAccount, .header__addGoal {
   width: 100vw;
   height: 170px;
@@ -44,6 +50,12 @@ h6 {
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
 }
 
+.header__addGoal {
+  width: 100vw;
+  height: 200px;
+  background: #fef4de;
+}
+
 .sidebar {
   height: auto;
   padding: 20px;
@@ -53,8 +65,34 @@ h6 {
   margin-bottom: 30px;
 }
 
-.mainPageLogged-submenu {
+.mainPageLogged__submenu {
   border-bottom: 1px solid #593C7E;
   padding-bottom: 5px;
   color: #351550;
+}
+
+.addGoal__headerBox, .addGoal__descriptionBox {
+  background-color: white;
+  display: block;
+  border-radius: 6px;
+  min-height: 200px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.addGoal__pictItems--scoreTo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: none;
+  border: 1px solid black;
+  position: absolute;
+  top: 0;
+  margin-top: 5px;
+}
+
+.addGoal__pictItems--scoreTo p {
+  position: absolute;
+  left: 20%;
+  top: 13%;
 }
