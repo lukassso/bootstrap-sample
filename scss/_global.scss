@@ -1,108 +1,146 @@
   body,
   html {
-    width: 100%;
-    height: 100vh;
-    box-sizing: border-box;
+      width: 100%;
+      height: 100vh;
+      box-sizing: border-box;
   }
+
   body {
-    margin: 0 auto;
-    display: block;
-    font-family: 'Lato', sans-serif;
-    background-color: #F3F3F3;
+      margin: 0 auto;
+      display: block;
+      font-family: 'Lato', sans-serif;
+      background-color: #F3F3F3;
   }
-// Typography
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 700;
-}
-.navbar {
-  border-bottom: 1px solid #593C7E;
-  box-shadow: 0 5px 5px rgb(212, 198, 230);
-}
-.header {
-  &__userAccount, &__addGoal {
-    width: 100vw;
-    height: 170px;
-    background-color: #F2DEFE;
+
+  // Typography
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+      font-weight: 700;
   }
-  &__userAccountBottom {
-    width: 100vw;
-    height: 120px;
-    background-color: white;
+
+  .navbar {
+      border-bottom: 1px solid #593C7E;
+      box-shadow: 0 5px 5px rgb(212, 198, 230);
   }
-  &__user-picture {
-    padding-top: 70px;
-    & img{
-      border: .3rem solid #fff;
-      box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
-    }
-}
-&__addGoal{
-  width: 100vw;
-  height: 200px;
-  background: rgb(254, 244, 222);
-}
-}
-.sidebar {
+
+  .header {
+
+      &__userAccount,
+      &__addGoal {
+          width: 100vw;
+          height: 170px;
+          background-color: #F2DEFE;
+      }
+
+      &__userAccountBottom {
+          width: 100vw;
+          height: 120px;
+          background-color: white;
+      }
+
+      &__user-picture {
+          padding-top: 70px;
+
+          & img {
+              border: .3rem solid #fff;
+              box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+          }
+      }
+
+      // &__addGoal {
+      //     width: 100vw;
+      //     height: 200px;
+      //     background: rgb(254, 244, 222);
+      // }
+  }
+.wrapperBox {
   height: auto;
-  padding: 20px; 
-  background-color: white;
-  display: block;
-  border-radius: 6px;
-  margin-bottom: 30px;
+      padding: 20px;
+      background-color: white;
+      display: block;
+      border-radius: 6px;
+      margin-bottom: 30px;
+}
+  .sidebar {
+      height: auto;
+      padding: 20px;
+      background-color: white;
+      display: block;
+      border-radius: 6px;
+      margin-bottom: 30px;
+
+  }
+
+  .submenu {
+
+          border-bottom: 1px solid #593C7E;
+          padding-bottom: 5px;
+          color: #351550;
+      }
   
-}
-.mainPageLogged{
-  &__submenu{
-  border-bottom: 1px solid #593C7E;
-  padding-bottom: 5px;
-  color: #351550;
-}
-}
-.addGoal {
-  &__headerBox, &__descriptionBox {
-    background-color: white;
-    display: block;
-    border-radius: 6px;
-    min-height: 200px;
-  padding: 20px; 
-  margin-bottom: 30px;
+  .addGoal {
+
+      &__headerBox {
+        background-color: #F2DEFE;
+        display: block;
+        border-radius: 6px;
+        min-height: 200px;
+        padding: 20px;
+        margin-bottom: 30px;
+      }
+      &__descriptionBox {
+          background-color: white;
+          display: block;
+          border-radius: 6px;
+          min-height: 200px;
+          padding: 20px;
+          margin-bottom: 30px;
+      }
+
+      &__pictItems--scoreTo {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          background-color: none;
+          border: 1px solid black;
+          position: absolute;
+          top: 0;
+          margin-top: 5px;
+
+          & p {
+              position: absolute;
+              left: 20%;
+              top: 13%;
+          }
+
+      }
   }
-  &__pictItems--scoreTo{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: none;
-border: 1px solid black;
-position: absolute;
-top: 0;
-margin-top: 5px;
-& p {
-  position: absolute;
-  left: 20%;
-  top: 13%;
+  .goalPage {
+&__submenu li a {
+font-size:  1.25rem;
+font-weight: 700;
 }
-
+ 
   }
-}
-// .circle {
-//   width:40px;
-//   height: 40px;
-//   border-radius: 1px solid;
-//   background-color: black;
-// }
 
-// .circle.outer {
-//     position: relative;
-// }
 
-// .inner {
-//     position: absolute;
-//     left: 50%;
-//     border: 3px solid #fff;
-// }
+  // .circle {
+  //   width:40px;
+  //   height: 40px;
+  //   border-radius: 1px solid;
+  //   background-color: black;
+  // }
 
+  // .circle.outer {
+  //     position: relative;
+  // }
+
+  // .inner {
+  //     position: absolute;
+  //     left: 50%;
+  //     border: 3px solid #fff;
+  // }
