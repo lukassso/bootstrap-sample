@@ -74,16 +74,7 @@ h6 {
   color: #351550;
 }
 
-.addGoal__headerBox {
-  background-color: #F2DEFE;
-  display: block;
-  border-radius: 6px;
-  min-height: 200px;
-  padding: 20px;
-  margin-bottom: 30px;
-}
-
-.addGoal__descriptionBox {
+.addGoal__headerBox, .goalPage__headerBox {
   background-color: white;
   display: block;
   border-radius: 6px;
@@ -92,7 +83,16 @@ h6 {
   margin-bottom: 30px;
 }
 
-.addGoal__pictItems--scoreTo {
+.addGoal__descriptionBox, .goalPage__descriptionBox {
+  background-color: white;
+  display: block;
+  border-radius: 6px;
+  min-height: 200px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.addGoal__pictItems--scoreTo, .goalPage__pictItems--scoreTo {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -103,7 +103,7 @@ h6 {
   margin-top: 5px;
 }
 
-.addGoal__pictItems--scoreTo p {
+.addGoal__pictItems--scoreTo p, .goalPage__pictItems--scoreTo p {
   position: absolute;
   left: 20%;
   top: 13%;
