@@ -2,10 +2,9 @@
 <html lang="en">
 
 <head>
-
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Goal Page</title>
+  <title>Add Goal Page</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="...">
   <meta name="author" content="">
@@ -44,7 +43,6 @@
 </head>
 
 <body>
-
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light mb-3">
     <a class="ml-5 navbar-brand" href="/">
@@ -62,69 +60,41 @@
         <li class="nav-item">
           <a class="nav-link" href="#">Projects</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" href="#">
           <a class="nav-link">Offers</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Profile</a>
         </li>
-        <picture>
           <img src="./img/icon-user-default-profile.svg" width="40" alt="logo reall" class="mr-5 logo-reall">
-        </picture>
-
       </ul>
     </div>
   </nav>
+  <!-- Header -->
+  <header class="main-wrapper addGoal">
+    <!--Background user header -->
+    <div class="container-fluid header__goalPage">
+    </div>
+  </header>
 
   <div class="container body-wrapper mt-5">
-    <div class="row">
+    <!-- breadcrump and site navigation  -->
+    <nav aria-label="breadcrumb mt-2 mb-3">
+      <ol class="breadcrumb bg-transparent p-0">
+        <li class="breadcrumb-item"><a href="#">Your Projects</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Add New Project</li>
+      </ol>
+    </nav>
+    <div class="col-12 d-block text-left pl-0 ml-0 mb-4">
+      <a class="btn btn-outline-primary btn-sm" href="#" role="button">Back</a>
+    </div>
+    <h5 class="d-block mb-4">Add new project</h5>
+    <!-- sections site -->
 
+    <div class="row">
       <aside class="col-md-4">
         <!--search sidebar-->
-        <div class="container wrapperBox">
-          <h5 class="mb-4">Meeting calendar</h5>
-          <div class="justify-content-start sidebar__apointment">
-            <h5 class="mb-4">Your next appointments</h5>
-            <div class="sidebar__apointment-incoming">
-              <h6 class="mb-3">Incoming</h6>
-              <div class="row item-apointment">
-                <div class="col-8 item-apointment__data">
-                  <div class="apointment-name">
-                    <p class="p-0 m-0">Fashion show site visit</p>
-                  </div>
-                  <div class="row col-12 item-apointment__time">
-                    <p>13 July 2019</p>
-                  </div>
-                </div>
-                <div class="col-2">
-                  <button type="button" class="btn btn-info btn-sm">13:00</button>
-                </div>
-                <div class="col-2">
-                  <button type="button" class="btn btn-primary btn-sm">-</button>
-                </div>
-              </div>
-
-              <div class="row item-apoitment">
-                <div class="col-8 item-apoitment__data">
-                  <div class="apointment-name">
-                    <p class="p-0 m-0">Model hairstyle selection</p>
-                  </div>
-                  <div class="row col-12 item-apointment__time">
-                    <p>13 July 2019</p>
-                  </div>
-                </div>
-                <div class="col-2">
-                  <button type="button" class="btn btn-info btn-sm">15:00</button>
-                </div>
-                <div class="col-2">
-                  <button type="button" class="btn btn-primary btn-sm">-</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="container wrapperBox">
+        <div class="sidebar">
           <h5 class="mb-4">Invite people</h5>
           <form>
             <div class="form-group">
@@ -135,19 +105,21 @@
                 else.</small>
             </div>
             <div class="form-group">
-              <label for="exampleInputPassword1">Write the name of the role </label>
+              <label for="exampleInputPassword1">Wpisz nazwę roli dla osoby zapraszanej</label>
               <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Nazwa roli">
             </div>
           </form>
-          <div class="text-right mt-3 mb-3 mr-0">
-            <a class="btn btn-primary" href="#" role="button">Send invitation</a>
-          </div>
-        </div>
 
-        <div class="container wrapperBox">
+          <div class="text-right mt-3 mb-3 mr-0">
+            <a class="btn btn-primary" href="#" role="button">Zaproś</a>
+          </div>
+
           <span class="border-bottom"></span>
-          <h5 class="mb-4">Roles</h5>
-          <div class="container sidebar__team">
+          <h5 class="mb-4">
+            Roles
+          </h5>
+          <div class="sidebar__team">
+
             <div class="row mb-3 sidebar__team--item">
               <div class="col-4"><img src="https://unsplash.it/70/70" class="rounded-circle" alt=""></div>
               <div class="col-8 row">
@@ -155,31 +127,7 @@
                   <p class="mb-0 font-weight-bold">Marcin Kowalski</p>
                 </div>
                 <div class="col-12 ml-0 pl-0">
-                  <p>Założyciel</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="row mb-3 sidebar__team--item">
-              <div class="col-4"><img src="https://unsplash.it/70/70" class="rounded-circle" alt=""></div>
-              <div class="col-8 row">
-                <div class="col-12 mt-2 ml-0 pl-0">
-                  <p class="mb-0 font-weight-bold">Grażyna Nowak</p>
-                </div>
-                <div class="col-12 ml-0 pl-0">
-                  <p>Skarbnik</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="row mb-3 sidebar__team--item">
-              <div class="col-4"><img src="https://unsplash.it/70/70" class="rounded-circle" alt=""></div>
-              <div class="col-8 row">
-                <div class="col-12 mt-2 ml-0 pl-0">
-                  <p class="mb-0 font-weight-bold">Janusz Leński</p>
-                </div>
-                <div class="col-12 ml-0 pl-0">
-                  <p>Zbieracz</p>
+                  <p>Founder</p>
                 </div>
               </div>
             </div>
@@ -188,7 +136,7 @@
           <div class="row justify-content-start sidebar sidebar__interest">
             <h5 class="mb-4">Add roles</h5>
             <div class="input-group mb-3">
-              <input type="text" class="form-control" placeholder="Add interest">
+              <input type="text" class="form-control" placeholder="Write roles">
               <div class="input-group-append">
                 <button type="submit" class="btn btn-secondary">Add</button>
               </div>
@@ -209,221 +157,34 @@
 
       <!-- Right column -->
       <main class="col-md-8 col-12 addGoal">
-
-        <header class="container goalPage__headerBox">
-          <div class="row">
-            <div class="col-3 goalPage__picture"><img src="./img/pic1.jpg" alt="Goal picture" width="152" height="152"
-                class="rounded">
-            </div>
-            <div class="col-6 pt-1 goalPage__dataBox">
-              <ul class="list-inline">
-                <li class="list-inline-item goalPage__pictItems--outer">
-                  <img src="https://unsplash.it/40/40" class="rounded-circle" alt="">
-                </li>
-                <li class="list-inline-item goalPage__pictItems--inner">
-                  <img src="https://unsplash.it/40/40" class="rounded-circle" alt="">
-                </li>
-                <li class="list-inline-item goalPage__pictItems--inner">
-                  <img src="https://unsplash.it/40/40" class="rounded-circle" alt="">
-                </li>
-                <li class="list-inline-item ">
-                  <div class="goalPage__pictItems--scoreTo">
-                    <p>+6</p>
-                  </div>
-
-                </li>
-              </ul>
-              <div class="title d-block">
-                <h5 class="mb-3">Fashion show launch</h5>
-              </div>
-              <div class="text-left">
-                <button type="button" class="ml-0 mb-1 btn btn-primary">Join</button>
-              </div>
-            </div>
-
-            <div class="col-3">
-              <button type="button" class="float-right mb-2 btn btn-outline-primary">Follow <i
-                  class="icon-star"></i></button>
-              <button type="button" class="float-right btn btn-outline-primary">Share <i class="icon-share"></i>
-              </button>
-            </div>
-          </div>
-        </header>
-
-        <!-- main box -->
-        <div class="container wrapperBox">
-          <div class="row col-12">
-            <h5 class="mb-4">Description idea</h5>
-            <p>We're fashion-aholics, and we're organizing a fashion show with the latest trends in clothes, hairstyles
-              and make-up for 50+. We'll be creating our own clothes. Our future dream is to be able to sell them. We
-              deeply believe you can feel attractive at any age!</p>
-            <div class="col d-block text-center">
-              <a class="btn btn-outline-primary btn-sm" href="#" role="button">show more <i
-                  class="ml-2 icon-arrow-down"></i></a>
-            </div>
-            <!-- add accordeon here -->
-          </div>
+        <!-- Alert -->
+        <div class="alert alert-primary" role="alert">
+          Remember! The more detailed description of the project and required skills, the better the system will be able
+          to identify the potential participants.
         </div>
-
-        <!-- submenu -->
-        <div class="col-12">
-          <ul class="nav goalPage__submenu border-bottom">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">All activities</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Your activities</a>
-            </li>
-          </ul>
-        </div>
-
-        <!-- discusion panel timeline container -->
-        <div class="container wrapperBox mt-4">
-          <div class="row mt-4">
-            <div class="col-1 mr-1">
-              <img src="https://unsplash.it/40/40" class="ml-2 rounded-circle" alt="">
+        <!-- Edition box -->
+        <div class="addGoal__descriptionBox wrapperBox">
+          <h5 class="mb-4">Description of the idea</h5>
+          <div class="form-group">
+            <label for="ExampleInput">Add picture</label>
+            <div class="addGoal__photoShape border rounded mb-2">
+              <input type="file" class="addGoal__photoShape--addButton form-control-file mb-3"
+                id="exampleFormControlFile1">
             </div>
-            <div class="col-10">
-              <textarea class="ml-3 form-control" id="exampleFormControlTextarea1"
-                placeholder="Grażyna, start the discussion" rows="1"></textarea>
+            <label for="ExampleInput">Project name</label>
+            <input type="text" class="form-control mb-3" id="ExampleInput" placeholder="Fashion show launch">
+
+            <label for="textArea">Enter a description of the idea</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+
+            <div class="custom-control custom-checkbox mt-2">
+              <input type="checkbox" class="custom-control-input mt-2" id="customCheck1">
+              <label class="custom-control-label" for="customCheck1">Would you like your project to be private
+                (visible only to you and invitees)?</label>
             </div>
           </div>
-          <div class="mt-4 mb-2">
-            <a role="button" href="/" class="btn btn-outline-primary btn-sm"><i class="icon-plus mr-2"></i>Meeting
-              summary</a>
-          </div>
-        </div>
-
-        <!-- timeline feed -->
-        <div class="container">
-          <div class="row">
-            <div class="col-1">
-            </div>
-            <div class="col-11 p-0">
-              <!-- meeting summary template -->
-              <article class="timeline__meetingSummary">
-                <div class="timeline__time mt-2 mb-3 rounded-pill">
-                  <time class="p-2 small border rounded-pill" datetime="2014-01-10T03:45"><span>03:45 AM</span>
-                    <span>25/06/2019</span></time>
-                </div>
-                <div class="wrapperBox col-12">
-                  <h5 class="mt-3">Meeting summary</h5>
-                  <p>We've designed 10 dresses and aligned on who will sew them. During the discussion, we've chosen the
-                    location for the show - Avangarda. The selection was made due to the large space and free rent. On
-                    the next meeting, we're planning to visit the site and decide on the scene setup.</p>
-                  <div class="text-center mt-4 mb-4 timeline__imagesGallery">
-                    <img src="https://unsplash.it/130/80" class="mr-2" alt="...">
-                    <img src="https://unsplash.it/130/80" class="mr-2" alt="...">
-                    <img src="https://unsplash.it/130/80" class="mr-2" alt="...">
-                    <img src="https://unsplash.it/130/80" class="mr-2" alt="...">
-                  </div>
-                  <div class="col text-center">
-                    <a role="button" href="/" class="btn btn-primary">Show event page</a>
-                  </div>
-                  <div class="row mt-4">
-                    <div class="col-1 mr-1">
-                      <img src="https://unsplash.it/40/40" class="ml-2 rounded-circle" alt="">
-                    </div>
-                    <div class="col-10 mb-3">
-                      <textarea class="ml-3 form-control" id="exampleFormControlTextarea1" placeholder="Add new comment"
-                        rows="1"></textarea>
-                    </div>
-                  </div>
-                </div>
-              </article>
-              <!-- New role in the project info -->
-              <article class="timeline__newRole">
-                <div class="timeline__time mt-2 mb-3 rounded-pill">
-                  <time class="p-2 small border rounded-pill" datetime="2014-01-10T03:45"><span>03:45 AM</span>
-                    <span>25/06/2019</span></time>
-                </div>
-                <div class="wrapperBox col-12">
-                  <h5 class="mt-3 text-center d-block">New role in the project!</h5>
-                  <p class="font-weight-bold text-center d-block">
-                    Barbara - Model
-                  </p>
-                  <div class="text-center d-block">
-                    <img src="https://unsplash.it/100/100" class="rounded-circle" alt="">
-                  </div>
-                  <p class="mt-3 mb-4 text-center">Welcome to the team! See you soon!</p>
-                </div>
-              </article>
-              <!-- New meeting info box -->
-              <article class="timeline__newEventBox">
-                <div class="timeline__time mt-2 mb-3 rounded-pill">
-                  <time class="p-2 small border rounded-pill" datetime="2014-01-10T03:45"><span>04:45 PM</span>
-                    <span>25/06/2019</span></time>
-                </div>
-                <div class="wrapperBox col-12">
-                  <h5 class="mt-3">New metting title</h5>
-                  <div class="text-center mt-4 mb-4 timeline__newEventPhoto">
-                    <img src="https://unsplash.it/625/260" class="img-fluid mr-2" alt="...">
-                    <div class="mt-4 mb-2">
-                      <a role="button" href="/" class="ml-2 btn btn-outline-primary">Check</a>
-                      <a role="button" href="/" class="mr-2 btn btn-outline-primary">Join</a>
-                    </div>
-                  </div>
-                  <div class="row mt-4">
-                    <div class="col-1 mr-1">
-                      <img src="https://unsplash.it/40/40" class="ml-2 rounded-circle" alt="">
-                    </div>
-                    <div class="col-10 mb-3">
-                      <textarea class="ml-3 form-control" id="exampleFormControlTextarea1" placeholder="Add new comment"
-                        rows="1"></textarea>
-                    </div>
-                  </div>
-                </div>
-              </article>
-              <!-- Discusion box -->
-              <article class="timeline__discusionBox">
-                <div class="timeline__time mt-2 mb-3 rounded-pill">
-                  <time class="p-2 small border rounded-pill" datetime="2014-01-10T03:45"><span>04:45 PM</span>
-                    <span>25/06/2019</span></time>
-                </div>
-                <div class="wrapperBox col-12">
-                  <h5 class="mt-3">New discusion title</h5>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur.
-                  </p>
-                  <div class="row mt-4">
-                    <div class="col-1 mr-1">
-                      <img src="https://unsplash.it/40/40" class="ml-2 rounded-circle" alt="">
-                    </div>
-                    <div class="col-10 mb-3">
-                      <textarea class="ml-3 form-control" id="exampleFormControlTextarea1" placeholder="Add new comment"
-                        rows="1"></textarea>
-                    </div>
-                  </div>
-                </div>
-              </article>
-              <!-- Say hello to new project's users -->
-              <article class="timeline__newPeople">
-                <div class="timeline__time mt-2 mb-3 rounded-pill">
-                  <time class="p-2 small border rounded-pill" datetime="2014-01-10T03:45"><span>04:45 PM</span>
-                    <span>25/06/2019</span></time>
-                </div>
-                <div class="wrapperBox col-12">
-                  <h5 class="mt-3">Welcome new project's participants!</h5>
-                  <div class="col mt-4 mb-4 text-center">
-                    <ul class="list-inline mt-3 mb-4">
-                      <li class="list-inline-item m-1">
-                        <img src="https://unsplash.it/70/70" class="rounded-circle" alt="">
-                      </li>
-                      <li class="list-inline-item m-1">
-                        <img src="https://unsplash.it/70/70" class="rounded-circle" alt="">
-                      </li>
-                      <li class="list-inline-item m-1">
-                        <img src="https://unsplash.it/70/70" class="rounded-circle" alt="">
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </article>
-
-            </div>
+          <div class="row d-block text-center mt-3 mb-3">
+            <a class="btn btn-primary btn-lg" href="#" role="button">Add project</a>
           </div>
         </div>
       </main>

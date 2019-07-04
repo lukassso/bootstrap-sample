@@ -24,7 +24,7 @@
 
   .navbar {
       border-bottom: 1px solid #593C7E;
-      box-shadow: 0 5px 5px rgb(212, 198, 230);
+      box-shadow: 0 0.25rem 0.75rem rgb(212, 198, 230);
   }
 
   .header {
@@ -47,7 +47,7 @@
 
           & img {
               border: .3rem solid #fff;
-              box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+              box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.3);
           }
       }
 
@@ -91,14 +91,11 @@
         min-height: 200px;
         padding: 20px;
         margin-bottom: 30px;
+        box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .05);
       }
       &__descriptionBox {
           background-color: white;
-          display: block;
-          border-radius: 6px;
-          min-height: 200px;
-          padding: 20px;
-          margin-bottom: 30px;
+          box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .05);
       }
 
       &__pictItems--scoreTo {
@@ -116,7 +113,17 @@
               left: 20%;
               top: 13%;
           }
+      }
+      &__photoShape {
+        width: 252px;
+        min-height: 150px;
 
+        &--addButton {
+          position: relative;
+          width: 50%;
+          height: 50%;
+
+        }
       }
   }
   .goalPage {
