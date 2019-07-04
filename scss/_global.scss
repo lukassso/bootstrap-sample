@@ -26,7 +26,6 @@
       border-bottom: 1px solid #593C7E;
       box-shadow: 0 0.25rem 0.75rem rgb(212, 198, 230);
   }
-
   .header {
 
       &__userAccount,
@@ -35,13 +34,11 @@
           height: 170px;
           background-color: #F2DEFE;
       }
-
       &__userAccountBottom {
           width: 100vw;
           height: 120px;
           background-color: white;
       }
-
       &__user-picture {
           padding-top: 70px;
 
@@ -50,20 +47,24 @@
               box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.3);
           }
       }
-
-      // &__addGoal {
-      //     width: 100vw;
-      //     height: 200px;
-      //     background: rgb(254, 244, 222);
-      // }
   }
 .wrapperBox {
   height: auto;
       padding: 20px;
       background-color: white;
-      display: block;
       border-radius: 6px;
       margin-bottom: 30px;
+      &__bl {
+        padding: 20px;
+        background-color: white;
+       background-color: #fffaf5;
+        border-radius: 6px 6px 0 0;
+      }
+      &__tl {
+        padding: 20px;
+        background-color: white;
+        border-radius: 0 0 6px 6px;
+      }
 }
   .sidebar {
       height: auto;
@@ -81,38 +82,34 @@
           padding-bottom: 5px;
           color: #351550;
       }
-  
-  .addGoal, .goalPage {
-
-      &__headerBox {
-        background-color: white;
-        display: block;
-        border-radius: 6px;
-        min-height: 200px;
-        padding: 20px;
-        margin-bottom: 30px;
-        box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .05);
+  .headerBox {
+    background-color: white;
+    display: block;
+    border-radius: 6px;
+    min-height: 200px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .05);
+    &__pictItems--scoreTo {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: none;
+      border: 1px solid black;
+      position: absolute;
+      top: 0;
+      margin-top: 5px;
+      & p {
+          position: absolute;
+          left: 20%;
+          top: 13%;
       }
+  }
+  }
+  .addGoal, .goalPage {
       &__descriptionBox {
           background-color: white;
           box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .05);
-      }
-
-      &__pictItems--scoreTo {
-          width: 40px;
-          height: 40px;
-          border-radius: 50%;
-          background-color: none;
-          border: 1px solid black;
-          position: absolute;
-          top: 0;
-          margin-top: 5px;
-
-          & p {
-              position: absolute;
-              left: 20%;
-              top: 13%;
-          }
       }
       &__photoShape {
         width: 252px;
@@ -122,19 +119,14 @@
           position: relative;
           width: 50%;
           height: 50%;
-
         }
       }
+      &__submenu li a {
+        font-size:  1.25rem;
+        font-weight: 700;
+        }
   }
-  .goalPage {
-&__submenu li a {
-font-size:  1.25rem;
-font-weight: 700;
-}
- 
-  }
-
-
+  
   // .circle {
   //   width:40px;
   //   height: 40px;

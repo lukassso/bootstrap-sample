@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Add Goal Page</title>
+  <title>Add Event Page</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="...">
   <meta name="author" content="">
@@ -66,7 +66,7 @@
         <li class="nav-item">
           <a class="nav-link" href="#">Profile</a>
         </li>
-          <img src="./img/icon-user-default-profile.svg" width="40" alt="logo reall" class="mr-5 logo-reall">
+        <img src="./img/icon-user-default-profile.svg" width="40" alt="logo reall" class="mr-5 logo-reall">
       </ul>
     </div>
   </nav>
@@ -79,114 +79,161 @@
 
   <div class="container body-wrapper mt-5">
     <!-- breadcrump and site navigation  -->
-    <nav aria-label="breadcrumb mt-2 mb-3">
-      <ol class="breadcrumb bg-transparent p-0">
-        <li class="breadcrumb-item"><a href="#">Your Projects</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Add New Project</li>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb bg-transparent mb-3 p-0">
+        <li class="breadcrumb-item"><a href="#">Your projects</a></li>
+        <li class="breadcrumb-item"><a href="#">Fashion show launch</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Add new event</li>
       </ol>
     </nav>
-    <div class="col-12 d-block text-left pl-0 ml-0 mb-4">
+    <div class="col-12 d-block text-left pl-0 ml-0 mb-3">
       <a class="btn btn-outline-primary btn-sm" href="#" role="button">Back</a>
     </div>
-    <h5 class="d-block mb-4">Add new project</h5>
+    <h5 class="d-block mb-3">Add new event</h5>
     <!-- sections site -->
 
     <div class="row">
+
       <aside class="col-md-4">
         <!--search sidebar-->
-        <div class="sidebar">
-          <h5 class="mb-4">Invite people</h5>
-          <form>
-            <div class="form-group">
-              <label for="exampleInputEmail1">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                placeholder="Enter email">
-              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
-                else.</small>
-            </div>
-            <div class="form-group">
-              <label for="exampleInputPassword1">Wpisz nazwę roli dla osoby zapraszanej</label>
-              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Nazwa roli">
-            </div>
-          </form>
-
-          <div class="text-right mt-3 mb-3 mr-0">
-            <a class="btn btn-primary" href="#" role="button">Zaproś</a>
-          </div>
-
-          <span class="border-bottom"></span>
-          <h5 class="mb-4">
-            Roles
-          </h5>
-          <div class="sidebar__team">
-
-            <div class="row mb-3 sidebar__team--item">
-              <div class="col-4"><img src="https://unsplash.it/70/70" class="rounded-circle" alt=""></div>
-              <div class="col-8 row">
-                <div class="col-12 mt-2 ml-0 pl-0">
-                  <p class="mb-0 font-weight-bold">Marcin Kowalski</p>
+        <div class="wrapperBox">
+          <h5 class="mb-4">Meeting calendar</h5>
+          <div class="justify-content-start sidebar__apointment">
+            <h5 class="mb-4">Your next appointments</h5>
+            <div class="sidebar__apointment-incoming">
+              <h6 class="mb-3">Incoming</h6>
+              <div class="row item-apointment">
+                <div class="col-8 item-apointment__data">
+                  <div class="apointment-name">
+                    <p class="p-0 m-0">Fashion show site visit</p>
+                  </div>
+                  <div class="row col-12 item-apointment__time">
+                    <p>13 July 2019</p>
+                  </div>
                 </div>
-                <div class="col-12 ml-0 pl-0">
-                  <p>Founder</p>
+                <div class="col-2">
+                  <button type="button" class="btn btn-info btn-sm">13:00</button>
+                </div>
+                <div class="col-2">
+                  <button type="button" class="btn btn-primary btn-sm">-</button>
                 </div>
               </div>
-            </div>
-          </div>
 
-          <div class="row justify-content-start sidebar sidebar__interest">
-            <h5 class="mb-4">Add roles</h5>
-            <div class="input-group mb-3">
-              <input type="text" class="form-control" placeholder="Write roles">
-              <div class="input-group-append">
-                <button type="submit" class="btn btn-secondary">Add</button>
+              <div class="row item-apoitment">
+                <div class="col-8 item-apoitment__data">
+                  <div class="apointment-name">
+                    <p class="p-0 m-0">Model hairstyle selection</p>
+                  </div>
+                  <div class="row col-12 item-apointment__time">
+                    <p>13 July 2019</p>
+                  </div>
+                </div>
+                <div class="col-2">
+                  <button type="button" class="btn btn-info btn-sm">15:00</button>
+                </div>
+                <div class="col-2">
+                  <button type="button" class="btn btn-primary btn-sm">-</button>
+                </div>
               </div>
-            </div>
-            <div class="sidebar__itemsOfInterest">
-              <button type="button" class="btn btn-outline-primary m-2 rounded-pill btn-sm">Role name1 <i
-                  class="icon-close ml-2"></i></button>
-              <button type="button" class="btn btn-outline-primary m-2 rounded-pill btn-sm">name2<i
-                  class="icon-close ml-2"></i></button>
-              <button type="button" class="btn btn-outline-primary m-2 rounded-pill btn-sm">name3<i
-                  class="icon-close ml-2"></i></button>
-              <button type="button" class="btn btn-outline-primary m-2 rounded-pill btn-sm">Role name4<i
-                  class="icon-close ml-2"></i></button>
             </div>
           </div>
         </div>
       </aside>
 
       <!-- Right column -->
-      <main class="col-md-8 col-12 addGoal">
+      <main class="col-md-8 col-12 addEvent">
+
+        <header class="container headerBox">
+          <div class="row">
+            <div class="col-3 headerBox__picture"><img src="./img/pic1.jpg" alt="Goal picture" width="152" height="152"
+                class="rounded">
+            </div>
+            <div class="col-6 pt-1 headerBox_dataBox">
+              <ul class="list-inline">
+                <li class="list-inline-item headerBox__pictItems--outer">
+                  <img src="https://unsplash.it/40/40" class="rounded-circle" alt="">
+                </li>
+                <li class="list-inline-item headerBox__pictItems--inner">
+                  <img src="https://unsplash.it/40/40" class="rounded-circle" alt="">
+                </li>
+                <li class="list-inline-item headerBox__pictItems--inner">
+                  <img src="https://unsplash.it/40/40" class="rounded-circle" alt="">
+                </li>
+                <li class="list-inline-item ">
+                  <div class="headerBox__pictItems--scoreTo">
+                    <p>+6</p>
+                  </div>
+                </li>
+              </ul>
+              <div class="title d-block">
+                <h5 class="mb-3">Fashion show launch</h5>
+              </div>
+              <div class="text-left">
+                <button type="button" class="ml-0 mb-1 btn btn-primary">Join</button>
+              </div>
+            </div>
+            <div class="col-3">
+              <button type="button" class="float-right mb-2 btn btn-outline-primary">Follow <i
+                  class="icon-star"></i></button>
+              <button type="button" class="float-right btn btn-outline-primary">Share <i class="icon-share"></i>
+              </button>
+            </div>
+          </div>
+        </header>
+
         <!-- Alert -->
         <div class="alert alert-primary" role="alert">
           Remember! The more detailed description of the project and required skills, the better the system will be able
           to identify the potential participants.
         </div>
         <!-- Edition box -->
-        <div class="addGoal__descriptionBox wrapperBox">
-          <h5 class="mb-4">Description of the idea</h5>
-          <div class="form-group">
-            <label for="ExampleInput">Add picture</label>
-            <div class="addGoal__photoShape border rounded mb-2">
-              <input type="file" class="addGoal__photoShape--addButton form-control-file mb-3"
-                id="exampleFormControlFile1">
+        <h5 class="d-block col mb-4 mt-3">Fill the form to create a meeting</h5>
+        <div class="wrapperBox__bl"> 
+          <div class="row">
+            <div class="col">
+              <label for="ExampleInput">Add meeting picture</label>
+              <div class="addGoal__photoShape border rounded mb-2">
+                <input type="file" class="form-control-file mb-3" id="exampleFormControlFile1">
+              </div>
             </div>
-            <label for="ExampleInput">Project name</label>
-            <input type="text" class="form-control mb-3" id="ExampleInput" placeholder="Fashion show launch">
-
-            <label for="textArea">Enter a description of the idea</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-
-            <div class="custom-control custom-checkbox mt-2">
-              <input type="checkbox" class="custom-control-input mt-2" id="customCheck1">
-              <label class="custom-control-label" for="customCheck1">Would you like your project to be private
-                (visible only to you and invitees)?</label>
+            <div class="col-7">
+              <label for="ExampleInput">Project name</label>
+              <input type="text" class="form-control mb-3" id="ExampleInput" placeholder="Fashion show launch">
             </div>
-          </div>
-          <div class="row d-block text-center mt-3 mb-3">
-            <a class="btn btn-primary btn-lg" href="#" role="button">Add project</a>
           </div>
         </div>
+        <div class="wrapperBox__tl">
+            <div class="form-group">
+                <label for="ExampleInput">Add the meeting's location</label>
+                <input type="text" class="form-control mb-3" id="ExampleInput" placeholder="Meeting location">
+                <label for="ExampleInput">Meeting's date (DD/MM/YY)</label>
+                <input type="text" class="form-control mb-3" id="ExampleInput" placeholder="Meeting date">
+                <div class="row">
+                <div class="col-4">
+                    <label for="ExampleInput">Time</label>
+                    <input type="text" class="form-control mb-3" id="ExampleInput" placeholder="Meeting time">
+                </div>
+                    <div class="col-4">
+                        <label for="ExampleInput">Duration</label>
+                        <input type="text" class="form-control mb-3" id="ExampleInput" placeholder="Meeting duration">
+                    </div>
+                    
+                </div>
+                <label for="textArea">Enter a meeting description</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <div class="custom-control custom-checkbox mt-2">
+                  <input type="checkbox" class="custom-control-input mt-2" id="customCheck1">
+                  <label class="custom-control-label" for="customCheck1">Would you like your project to be private
+                    (visible only to you and invitees)?</label>
+                </div>
+              </div>
+              <div class="row d-block text-center mt-3 mb-3">
+                  <a class="btn btn-primary btn-lg" href="#" role="button">Add project</a>
+                </div>
+        </div>
+          
+          
+        
       </main>
     </div>
   </div>

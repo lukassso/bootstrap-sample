@@ -54,9 +54,21 @@ h6 {
   height: auto;
   padding: 20px;
   background-color: white;
-  display: block;
   border-radius: 6px;
   margin-bottom: 30px;
+}
+
+.wrapperBox__bl {
+  padding: 20px;
+  background-color: white;
+  background-color: #fffaf5;
+  border-radius: 6px 6px 0 0;
+}
+
+.wrapperBox__tl {
+  padding: 20px;
+  background-color: white;
+  border-radius: 0 0 6px 6px;
 }
 
 .sidebar {
@@ -74,7 +86,7 @@ h6 {
   color: #351550;
 }
 
-.addGoal__headerBox, .goalPage__headerBox {
+.headerBox {
   background-color: white;
   display: block;
   border-radius: 6px;
@@ -85,13 +97,7 @@ h6 {
   box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
 }
 
-.addGoal__descriptionBox, .goalPage__descriptionBox {
-  background-color: white;
-  -webkit-box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
-  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
-}
-
-.addGoal__pictItems--scoreTo, .goalPage__pictItems--scoreTo {
+.headerBox__pictItems--scoreTo {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -102,10 +108,16 @@ h6 {
   margin-top: 5px;
 }
 
-.addGoal__pictItems--scoreTo p, .goalPage__pictItems--scoreTo p {
+.headerBox__pictItems--scoreTo p {
   position: absolute;
   left: 20%;
   top: 13%;
+}
+
+.addGoal__descriptionBox, .goalPage__descriptionBox {
+  background-color: white;
+  -webkit-box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
 }
 
 .addGoal__photoShape, .goalPage__photoShape {
@@ -119,7 +131,7 @@ h6 {
   height: 50%;
 }
 
-.goalPage__submenu li a {
+.addGoal__submenu li a, .goalPage__submenu li a {
   font-size: 1.25rem;
   font-weight: 700;
 }
