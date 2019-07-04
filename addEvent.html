@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Event Page</title>
+  <title>Add Event Page</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="...">
   <meta name="author" content="">
@@ -83,12 +83,13 @@
       <ol class="breadcrumb bg-transparent mb-3 p-0">
         <li class="breadcrumb-item"><a href="#">Your projects</a></li>
         <li class="breadcrumb-item"><a href="#">Fashion show launch</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Fashion show site visit</li>
+        <li class="breadcrumb-item active" aria-current="page">Add new meeting</li>
       </ol>
     </nav>
     <div class="col-12 d-block text-left pl-0 ml-0 mb-3">
       <a class="btn btn-outline-primary btn-sm" href="#" role="button">Back</a>
     </div>
+    <h5 class="d-block mb-3">Add new meeting</h5>
     <!-- sections site -->
 
     <div class="row">
@@ -137,68 +138,11 @@
             </div>
           </div>
         </div>
-        <div class="wrapperBox">
-          <h5 class="mb-4">Invite people</h5>
-          <form>
-            <div class="form-group">
-              <label for="exampleInputEmail1">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                placeholder="Enter email">
-              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
-                else.</small>
-            </div>
-            <div class="form-group">
-              <label for="exampleInputPassword1">Wpisz nazwę roli dla osoby zapraszanej</label>
-              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Nazwa roli">
-            </div>
-          </form>
-
-          <div class="text-right mt-3 mb-3 mr-0">
-            <a class="btn btn-primary" href="#" role="button">Invite</a>
-          </div>
-
-          <span class="border-bottom"></span>
-          <h5 class="mb-4">
-            Roles
-          </h5>
-          <div class="sidebar__team">
-            <div class="row mb-3 sidebar__team--item">
-              <div class="col-4"><img src="https://unsplash.it/70/70" class="rounded-circle" alt=""></div>
-              <div class="col-8 row">
-                <div class="col-12 mt-2 ml-0 pl-0">
-                  <p class="mb-0 font-weight-bold">Marcin Kowalski</p>
-                </div>
-                <div class="col-12 ml-0 pl-0">
-                  <p>Founder</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="sidebar__interest mb-3">
-            <h5 class="mb-4">Add roles</h5>
-            <div class="input-group mb-3">
-              <input type="text" class="form-control" placeholder="Add interest">
-              <div class="input-group-append">
-                <button type="submit" class="btn btn-secondary">Add</button>
-              </div>
-            </div>
-            <div class="sidebar__itemsOfInterest">
-              <button type="button" class="btn btn-outline-primary m-2 rounded-pill btn-sm">Role name1 <i
-                  class="icon-close ml-2"></i></button>
-              <button type="button" class="btn btn-outline-primary m-2 rounded-pill btn-sm">name2<i
-                  class="icon-close ml-2"></i></button>
-              <button type="button" class="btn btn-outline-primary m-2 rounded-pill btn-sm">name3<i
-                  class="icon-close ml-2"></i></button>
-              <button type="button" class="btn btn-outline-primary m-2 rounded-pill btn-sm">Role name4<i
-                  class="icon-close ml-2"></i></button>
-            </div>
-          </div>
-        </div>
       </aside>
 
       <!-- Right column -->
-      <main role="main" class="col-md-8 col-12 addEvent">
+      <main class="col-md-8 col-12 addEvent">
+
         <header class="container headerBox">
           <div class="row">
             <div class="col-3 headerBox__picture"><img src="./img/pic1.jpg" alt="Goal picture" width="152" height="152"
@@ -236,59 +180,56 @@
             </div>
           </div>
         </header>
-        <!-- Event container -->
-        <div class="wrapperBox__bl">
+
+        <!-- Alert -->
+        <div class="alert alert-primary" role="alert">
+          Remember! The more detailed description of the project and required skills, the better the system will be able
+          to identify the potential participants.
+        </div>
+        <!-- Edition box -->
+        <h5 class="d-block col mb-4 mt-3">Fill the form to create a meeting</h5>
+        <div class="wrapperBox__bl"> 
           <div class="row">
-            <div class="col-8">
-              <h5>Fashion show site visit</h5>
+            <div class="col">
+              <label for="ExampleInput">Add meeting picture</label>
+              <div class="addGoal__photoShape border rounded mb-2">
+                <input type="file" class="form-control-file mb-3" id="exampleFormControlFile1">
+              </div>
             </div>
-            <div class="col-4 text-right"> <a class="btn btn-primary" href="#" role="button">Join to meeting</a>
+            <div class="col-7">
+              <label for="ExampleInput">Project name</label>
+              <input type="text" class="form-control mb-3" id="ExampleInput" placeholder="Fashion show launch">
             </div>
-          </div>
-          <!-- meeting members -->
-          <div class="d-block position-relative">
-            <small>Members of the meeting</small>
-            <ul class="list-inline mt-2">
-              <li class="list-inline-item headerBox__pictItems--outer">
-                <img src="https://unsplash.it/40/40" class="rounded-circle" alt="">
-              </li>
-              <li class="list-inline-item ">
-                <div class="eventPage__pictItems--scoreTo">
-                  <p>+1</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <!-- meeting description -->
-          <div class="EventDescription">
-            <h5>Description of the meeting</h5>
-            <p>We're planning to visit the site which we have chosen for the fashion show - Avangarda. It will be
-              crucial to decide how we should organise the space most effectively - including the chairs, scene and
-              lighting.
-            </p>
-            <p>
-              We'll have a special guest during the meeting - John McCarry - a famous scenographer who organized many
-              shows in his life. We've got the contact to him from Ellen's granddaughter, and he offered to help us for
-              free.
-            </p>
-            <p>
-              Please, be punctual at Avangarda so that you don't miss the introductions with Avangarda's owners and
-              John.</p>
           </div>
         </div>
-        <!-- meeting map -->
         <div class="wrapperBox__tl">
-          <h5>Address and map</h5>
-          <address>
-            <strong>Twitter, Inc.</strong><br>
-            1355 Market St, Suite 900<br>
-            San Francisco, CA 94103<br>
-            <abbr title="Phone">P:</abbr> (123) 456-7890
-          </address>
-          <a href="/" class="text-decoration-none"><i class="icon-size-fullscreen"></i></a>
-          <div class="col-12 eventPage__mapEventBox rounded border mt-3 mb-3">
-          </div>
+            <div class="form-group">
+                <label for="ExampleInput">Add the Meeting's location</label>
+                <input type="text" class="form-control mb-3" id="ExampleInput" placeholder="Meeting location">
+                <label for="ExampleInput">Meeting's date (DD/MM/YY)</label>
+                <input type="text" class="form-control mb-3" id="ExampleInput" placeholder="Meeting date">
+                <div class="row">
+                <div class="col-4">
+                    <label for="ExampleInput">Time</label>
+                    <input type="text" class="form-control mb-3" id="ExampleInput" placeholder="Meeting time">
+                </div>
+                    <div class="col-4">
+                        <label for="ExampleInput">Duration</label>
+                        <input type="text" class="form-control mb-3" id="ExampleInput" placeholder="Meeting duration">
+                    </div>
+                    
+                </div>
+                <label for="textArea">Enter a meeting description</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              
+              </div>
+              <div class="row d-block text-center mt-3 mb-3">
+                  <a class="btn btn-primary btn-lg" href="#" role="button">Create meeting</a>
+                </div>
         </div>
+          
+          
+        
       </main>
     </div>
   </div>

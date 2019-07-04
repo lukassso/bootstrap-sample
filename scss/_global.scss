@@ -126,7 +126,29 @@
         font-weight: 700;
         }
   }
+  .eventPage {
+    &__mapEventBox {
+      width: 100%;
+      min-height: 200px;
+        }
+        &__pictItems--scoreTo {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          background-color: none;
+          border: 1px solid black;
+          position: absolute;
+          top: 28px;
+          margin-top: 5px;
+          & p {
+            position: absolute;
+            left: 20%;
+            top: 13%;
+        }
+        }
+  }
   
+
   // .circle {
   //   width:40px;
   //   height: 40px;
