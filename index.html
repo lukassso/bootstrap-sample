@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Event Page</title>
+  <title>Search Page</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="...">
   <meta name="author" content="">
@@ -39,7 +39,6 @@
   <link rel="apple-touch-icon" href="">
   <link rel="apple-touch-icon-precomposed" href="">
   <link rel='icon' sizes="32x32" href="">
-
 </head>
 
 <body>
@@ -70,228 +69,315 @@
       </ul>
     </div>
   </nav>
-  <!-- Header -->
-  <header class="main-wrapper addGoal">
-    <!--Background user header -->
-    <div class="container-fluid header__goalPage">
-    </div>
-  </header>
 
-  <div class="container body-wrapper mt-5">
-    <!-- breadcrump and site navigation  -->
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb bg-transparent mb-3 p-0">
-        <li class="breadcrumb-item"><a href="#">Your projects</a></li>
-        <li class="breadcrumb-item"><a href="#">Fashion show launch</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Fashion show site visit</li>
-      </ol>
-    </nav>
-    <div class="col-12 d-block text-left pl-0 ml-0 mb-3">
-      <a class="btn btn-outline-primary btn-sm" href="#" role="button">Back</a>
-    </div>
-    <!-- sections site -->
-
-    <div class="row">
-
-      <aside class="col-md-4">
-        <!--search sidebar-->
-        <div class="wrapperBox">
-          <h5 class="mb-4">Meeting calendar</h5>
-          <div class="justify-content-start sidebar__apointment">
-            <h5 class="mb-4">Your next appointments</h5>
-            <div class="sidebar__apointment-incoming">
-              <h6 class="mb-3">Incoming</h6>
-              <div class="row item-apointment">
-                <div class="col-8 item-apointment__data">
-                  <div class="apointment-name">
-                    <p class="p-0 m-0">Fashion show site visit</p>
-                  </div>
-                  <div class="row col-12 item-apointment__time">
-                    <p>13 July 2019</p>
-                  </div>
-                </div>
-                <div class="col-2">
-                  <button type="button" class="btn btn-info btn-sm">13:00</button>
-                </div>
-                <div class="col-2">
-                  <button type="button" class="btn btn-primary btn-sm">-</button>
-                </div>
-              </div>
-
-              <div class="row item-apoitment">
-                <div class="col-8 item-apoitment__data">
-                  <div class="apointment-name">
-                    <p class="p-0 m-0">Model hairstyle selection</p>
-                  </div>
-                  <div class="row col-12 item-apointment__time">
-                    <p>13 July 2019</p>
-                  </div>
-                </div>
-                <div class="col-2">
-                  <button type="button" class="btn btn-info btn-sm">15:00</button>
-                </div>
-                <div class="col-2">
-                  <button type="button" class="btn btn-primary btn-sm">-</button>
-                </div>
-              </div>
+  <div class="container mt-5 body-wrapper">
+    <!-- search -->
+    <section class="col-12 mainSearch">
+      <div class="wrapperBox">
+        <div class="header mt-2 mb-4">
+          <h5>Find a project or offer that suits your interests</h5>
+        </div>
+        <div class="d-flex justify-content-between">
+          <div class="input-group mb-3 mr-2">
+            <input type="text" class="form-control" placeholder="Enter for example: confectionery, cycling, cat care…"
+              aria-label="Recipient's username" aria-describedby="button-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-outline-primary" type="button" id="button-addon2">Button</button>
             </div>
+          </div>
+          <div class="col-4 mr-0 pr-0 form-group">
+
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>city 1</option>
+              <option>city 2</option>
+              <option>city 3</option>
+              <option>city 4</option>
+              <option>city 5</option>
+            </select>
           </div>
         </div>
-        <div class="wrapperBox">
-          <h5 class="mb-4">Invite people</h5>
-          <form>
-            <div class="form-group">
-              <label for="exampleInputEmail1">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                placeholder="Enter email">
-              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
-                else.</small>
-            </div>
-            <div class="form-group">
-              <label for="exampleInputPassword1">Wpisz nazwę roli dla osoby zapraszanej</label>
-              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Nazwa roli">
-            </div>
-          </form>
 
-          <div class="text-right mt-3 mb-3 mr-0">
-            <a class="btn btn-primary" href="#" role="button">Invite</a>
+        <div class="pillList mt-4">
+          <label class="pillList__item">
+            <input type="checkbox" name="feature" value="2">
+            <span class="pillList__label">interest
+              <span class="Icon Icon--checkLight Icon--smallest"><i class="ml-2 icon-close"></i></span>
+            </span>
+          </label>
+          <label class="pillList__item">
+            <input type="checkbox" name="feature" value="2">
+            <span class="pillList__label">interest
+              <span class="Icon Icon--checkLight Icon--smallest"><i class="ml-2 icon-close"></i></span>
+            </span>
+          </label>
+          <label class="pillList__item">
+            <input type="checkbox" name="feature" value="2">
+            <span class="pillList__label">interest
+              <span class="Icon Icon--checkLight Icon--smallest"><i class="ml-2 icon-close"></i></span>
+            </span>
+          </label>
+        </div>
+        <div class="d-flex justify-content-center buttonSearchBox">
+          <div class="text-center mt-4 mb-3">
+            <a class="btn btn-primary btn-lg" href="#" role="button">Search</a>
           </div>
+          <div class="ml-3 clearSettings"><a href="/">Clear settings</a></div>
+        </div>
+      </div>
 
-          <span class="border-bottom"></span>
-          <h5 class="mb-4">
-            Roles
-          </h5>
-          <div class="sidebar__team">
-            <div class="row mb-3 sidebar__team--item">
-              <div class="col-4"><img src="https://unsplash.it/70/70" class="rounded-circle" alt=""></div>
-              <div class="col-8 row">
-                <div class="col-12 mt-2 ml-0 pl-0">
-                  <p class="mb-0 font-weight-bold">Marcin Kowalski</p>
-                </div>
-                <div class="col-12 ml-0 pl-0">
-                  <p>Founder</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="sidebar__interest mb-3">
-            <h5 class="mb-4">Add roles</h5>
-            <div class="input-group mb-3">
-              <input type="text" class="form-control" placeholder="Add interest">
-              <div class="input-group-append">
-                <button type="submit" class="btn btn-secondary">Add</button>
-              </div>
-            </div>
-            <div class="sidebar__itemsOfInterest">
-              <button type="button" class="btn btn-outline-primary m-2 rounded-pill btn-sm">Role name1 <i
-                  class="icon-close ml-2"></i></button>
-              <button type="button" class="btn btn-outline-primary m-2 rounded-pill btn-sm">name2<i
-                  class="icon-close ml-2"></i></button>
-              <button type="button" class="btn btn-outline-primary m-2 rounded-pill btn-sm">name3<i
-                  class="icon-close ml-2"></i></button>
-              <button type="button" class="btn btn-outline-primary m-2 rounded-pill btn-sm">Role name4<i
-                  class="icon-close ml-2"></i></button>
-            </div>
+    </section>
+    <!-- project offers container -->
+    <!-- offer1 -->
+    <section class="projectCardContainer d-flex">
+      <div class="col-md-4 col-sm-12 projectCardOffer">
+        <div class="projectCardOffer__pict position-relative no-gutters">
+          <img class="offer-card-img-top img-fluid " src="https://unsplash.it/480/340" alt="Card image cap">
+          <div class="projectCardContainer__folowFlag">Follow that <i class="icon-star ml-2"></i>
           </div>
         </div>
-      </aside>
-
-      <!-- Right column -->
-      <main role="main" class="col-md-8 col-12 addEvent">
-        <header class="container headerBox">
+        <div class="container border bg-white rounded-bottom projectCardOffer__body">
+          <h5 class="projectCardOffer__body--picture mt-4 mb-2">Learning how to pain like Picasso </h5>
           <div class="row">
-            <div class="col-3 headerBox__picture"><img src="./img/pic1.jpg" alt="Goal picture" width="152" height="152"
-                class="rounded">
-            </div>
-            <div class="col-6 pt-1 headerBox_dataBox">
-              <ul class="list-inline">
-                <li class="list-inline-item headerBox__pictItems--outer">
-                  <img src="https://unsplash.it/40/40" class="rounded-circle" alt="">
-                </li>
-                <li class="list-inline-item headerBox__pictItems--inner">
-                  <img src="https://unsplash.it/40/40" class="rounded-circle" alt="">
-                </li>
-                <li class="list-inline-item headerBox__pictItems--inner">
-                  <img src="https://unsplash.it/40/40" class="rounded-circle" alt="">
-                </li>
-                <li class="list-inline-item ">
-                  <div class="headerBox__pictItems--scoreTo">
-                    <p>+6</p>
-                  </div>
-                </li>
-              </ul>
-              <div class="title d-block">
-                <h5 class="mb-3">Fashion show launch</h5>
-              </div>
-              <div class="text-left">
-                <button type="button" class="ml-0 mb-1 btn btn-primary">Join</button>
-              </div>
-            </div>
-            <div class="col-3">
-              <button type="button" class="float-right mb-2 btn btn-outline-primary">Follow <i
-                  class="icon-star"></i></button>
-              <button type="button" class="float-right btn btn-outline-primary">Share <i class="icon-share"></i>
-              </button>
-            </div>
+            <div class="col-4">City:</div>
+            <div class="col-8">Wrocław</div>
           </div>
-        </header>
-        <!-- Event container -->
-        <div class="wrapperBox__bl">
           <div class="row">
-            <div class="col-8">
-              <h5>Fashion show site visit</h5>
+            <div class="col-4">Status:</div>
+            <div class="col-8">The group began to meet on April 1 2019 </div>
+          </div>
+          <div class="row">
+            <div class="col-4">Interests:</div>
+            <div class="col-8">Culture, Art</div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-7">
+              <div class="projectCardOffer__members position-relative">
+                <ul class="list-inline mt-2">
+                  <li class="list-inline-item">
+                    <img src="https://unsplash.it/40/40" class="rounded-circle" alt="">
+                  </li>
+                  <li class="list-inline-item ">
+                    <div class="list-inline-item__scoreTo">
+                      <p>+1</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="col-4 text-right"> <a class="btn btn-primary" href="#" role="button">Join to meeting</a>
+            <div class="col">
+              <a class="btn btn-primary btn-sm mt-3 float-right" href="#" role="button">More</a>
             </div>
           </div>
-          <!-- meeting members -->
-          <div class="d-block position-relative">
-            <small>Members of the meeting</small>
-            <ul class="list-inline mt-2">
-              <li class="list-inline-item headerBox__pictItems--outer">
-                <img src="https://unsplash.it/40/40" class="rounded-circle" alt="">
-              </li>
-              <li class="list-inline-item ">
-                <div class="eventPage__pictItems--scoreTo">
-                  <p>+1</p>
+          <div class="mb-lg-4 mt-1 projectCardOffer__upMeet upcoming-meet">
+            <h6 class="mb-3">Upcoming meetings</h6>
+            <div class="row itemApointment mb-2">
+              <div class="col-7 mr-0 pr-0 item-apointment__data">
+                <div class="itemApointment__name">
+                  <p class="p-0 m-0">We paint the still life</p>
                 </div>
-              </li>
-            </ul>
-          </div>
-          <!-- meeting description -->
-          <div class="EventDescription">
-            <h5>Description of the meeting</h5>
-            <p>We're planning to visit the site which we have chosen for the fashion show - Avangarda. It will be
-              crucial to decide how we should organise the space most effectively - including the chairs, scene and
-              lighting.
-            </p>
-            <p>
-              We'll have a special guest during the meeting - John McCarry - a famous scenographer who organized many
-              shows in his life. We've got the contact to him from Ellen's granddaughter, and he offered to help us for
-              free.
-            </p>
-            <p>
-              Please, be punctual at Avangarda so that you don't miss the introductions with Avangarda's owners and
-              John.</p>
-          </div>
-        </div>
-        <!-- meeting map -->
-        <div class="wrapperBox__tl">
-          <h5>Address and map</h5>
-          <address>
-            <strong>Twitter, Inc.</strong><br>
-            1355 Market St, Suite 900<br>
-            San Francisco, CA 94103<br>
-            <abbr title="Phone">P:</abbr> (123) 456-7890
-          </address>
-          <a href="/" class="text-decoration-none"><i class="icon-size-fullscreen"></i></a>
-          <div class="col-12 eventPage__mapEventBox rounded border mt-3 mb-3">
+                <div class="itemApointment__time">
+                  <p class="small mb-0">17 July 2019</p>
+                </div>
+              </div>
+              <div class="col text-right mt-2">
+                <div class="btn-group" role="group" aria-label="Basic example">
+                  <button type="button" class="btn btn-secondary btn-sm">11:00</button>
+                  <button type="button" class="btn btn-primary btn-sm"><i class="icon-arrow-right"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="row itemApointment mb-2">
+              <div class="col-7 mr-0 pr-0 item-apointment__data">
+                <div class="itemApointment__name">
+                  <p class="p-0 m-0">We paint the still life</p>
+                </div>
+                <div class="itemApointment__time">
+                  <p class="small mb-0">17 July 2019</p>
+                </div>
+              </div>
+              <div class="col text-right mt-2">
+                <div class="btn-group" role="group" aria-label="Basic example">
+                  <button type="button" class="btn btn-secondary btn-sm">11:00</button>
+                  <button type="button" class="btn btn-primary btn-sm"><i class="icon-arrow-right"></i></button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </main>
+      </div>
+      <div class="col-md-4 col-sm-12 projectCardOffer">
+        <div class="projectCardOffer__pict position-relative no-gutters">
+          <img class="offer-card-img-top img-fluid " src="https://unsplash.it/480/340" alt="Card image cap">
+          <div class="projectCardContainer__folowFlag">Follow that <i class="icon-star ml-2"></i>
+          </div>
+        </div>
+        <div class="container border bg-white rounded-bottom projectCardOffer__body">
+          <h5 class="projectCardOffer__body--picture mt-4 mb-2">Learning how to pain like Picasso </h5>
+          <div class="row">
+            <div class="col-4">City:</div>
+            <div class="col-8">Wrocław</div>
+          </div>
+          <div class="row">
+            <div class="col-4">Status:</div>
+            <div class="col-8">The group began to meet on April 1 2019 </div>
+          </div>
+          <div class="row">
+            <div class="col-4">Interests:</div>
+            <div class="col-8">Culture, Art</div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-7">
+              <div class="projectCardOffer__members position-relative">
+                <ul class="list-inline mt-2">
+                  <li class="list-inline-item">
+                    <img src="https://unsplash.it/40/40" class="rounded-circle" alt="">
+                  </li>
+                  <li class="list-inline-item ">
+                    <div class="list-inline-item__scoreTo">
+                      <p>+1</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+              <a class="btn btn-primary btn-sm mt-3 float-right" href="#" role="button">More</a>
+            </div>
+          </div>
+          <div class="mb-lg-4 mt-1 projectCardOffer__upMeet upcoming-meet">
+            <h6 class="mb-3">Upcoming meetings</h6>
+            <div class="row itemApointment mb-2">
+              <div class="col-7 mr-0 pr-0 item-apointment__data">
+                <div class="itemApointment__name">
+                  <p class="p-0 m-0">We paint the still life</p>
+                </div>
+                <div class="itemApointment__time">
+                  <p class="small mb-0">17 July 2019</p>
+                </div>
+              </div>
+              <div class="col text-right mt-2">
+                <div class="btn-group" role="group" aria-label="Basic example">
+                  <button type="button" class="btn btn-secondary btn-sm">11:00</button>
+                  <button type="button" class="btn btn-primary btn-sm"><i class="icon-arrow-right"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="row itemApointment mb-2">
+              <div class="col-7 mr-0 pr-0 item-apointment__data">
+                <div class="itemApointment__name">
+                  <p class="p-0 m-0">We paint the still life</p>
+                </div>
+                <div class="itemApointment__time">
+                  <p class="small mb-0">17 July 2019</p>
+                </div>
+              </div>
+              <div class="col text-right mt-2">
+                <div class="btn-group" role="group" aria-label="Basic example">
+                  <button type="button" class="btn btn-secondary btn-sm">11:00</button>
+                  <button type="button" class="btn btn-primary btn-sm"><i class="icon-arrow-right"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12 projectCardOffer">
+        <div class="projectCardOffer__pict position-relative no-gutters">
+          <img class="offer-card-img-top img-fluid " src="https://unsplash.it/480/340" alt="Card image cap">
+          <div class="projectCardContainer__folowFlag">Follow that <i class="icon-star ml-2"></i>
+          </div>
+        </div>
+        <div class="container border bg-white rounded-bottom projectCardOffer__body">
+          <h5 class="projectCardOffer__body--picture mt-4 mb-2">Learning how to pain like Picasso </h5>
+          <div class="row">
+            <div class="col-4">City:</div>
+            <div class="col-8">Wrocław</div>
+          </div>
+          <div class="row">
+            <div class="col-4">Status:</div>
+            <div class="col-8">The group began to meet on April 1 2019 </div>
+          </div>
+          <div class="row">
+            <div class="col-4">Interests:</div>
+            <div class="col-8">Culture, Art</div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-7">
+              <div class="projectCardOffer__members position-relative">
+                <ul class="list-inline mt-2">
+                  <li class="list-inline-item">
+                    <img src="https://unsplash.it/40/40" class="rounded-circle" alt="">
+                  </li>
+                  <li class="list-inline-item ">
+                    <div class="list-inline-item__scoreTo">
+                      <p>+1</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+              <a class="btn btn-primary btn-sm mt-3 float-right" href="#" role="button">More</a>
+            </div>
+          </div>
+          <div class="mb-lg-4 mt-1 projectCardOffer__upMeet upcoming-meet">
+            <h6 class="mb-3">Upcoming meetings</h6>
+            <div class="row itemApointment mb-2">
+              <div class="col-7 mr-0 pr-0 item-apointment__data">
+                <div class="itemApointment__name">
+                  <p class="p-0 m-0">We paint the still life</p>
+                </div>
+                <div class="itemApointment__time">
+                  <p class="small mb-0">17 July 2019</p>
+                </div>
+              </div>
+              <div class="col text-right mt-2">
+                <div class="btn-group" role="group" aria-label="Basic example">
+                  <button type="button" class="btn btn-secondary btn-sm">11:00</button>
+                  <button type="button" class="btn btn-primary btn-sm"><i class="icon-arrow-right"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="row itemApointment mb-2">
+              <div class="col-7 mr-0 pr-0 item-apointment__data">
+                <div class="itemApointment__name">
+                  <p class="p-0 m-0">We paint the still life</p>
+                </div>
+                <div class="itemApointment__time">
+                  <p class="small mb-0">17 July 2019</p>
+                </div>
+              </div>
+              <div class="col text-right mt-2">
+                <div class="btn-group" role="group" aria-label="Basic example">
+                  <button type="button" class="btn btn-secondary btn-sm">11:00</button>
+                  <button type="button" class="btn btn-primary btn-sm"><i class="icon-arrow-right"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- job offert box -->
+    <div class="mt-5 d-flex jobCardOffer">
+      <div class="col-md-4 col-sd-6 col-12">
+        <div class="border wrapperBox">
+          <div class="d-block text-right mt-2 mb-3 jobOfferCard__follow">
+            Follow job offer <i class="icon-star ml-2"></i>
+          </div>
+          <h5 class="d-block">We are looking for cook in a Chinese restaurant</h5>
+          <div class="row no-gutters mt-4 mb-3">
+            <div class="col-6 text-left mt-2 small jobOfferCard__addDate">added: 20/05/2019</div>
+            <div class="col-6 text-right jobOfferCard__seeMore button"> <a class="btn btn-outline-primary" href="#"
+                role="button">See
+                more details</a></div>
+          </div>
+        </div>
+      </div>
     </div>
+
   </div>
+
 
   <!-- Footer -->
   <footer class="container">

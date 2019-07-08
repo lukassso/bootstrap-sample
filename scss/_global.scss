@@ -147,7 +147,110 @@
         }
         }
   }
-  
+  .list-inline {
+    
+   &-item__scoreTo {
+      width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          background-color: none;
+          border: 1px solid black;
+          position: relative;
+          bottom: 5px;
+          & p {
+           position: relative;
+            left: 20%;
+            top: 13%;
+
+    }
+  }
+}
+.projectCardContainer{
+  &__folowFlag{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  color: white;
+  font-weight: 700;
+  }
+}
+
+.pillList{
+&__item {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  margin: 0 12px 12px 0;
+  text-transform: capitalize;
+}
+&__item input[type="checkbox"] {
+  display: none;
+}
+&__item input[type="checkbox"]:checked + .pillList__label {
+  background-color: #1da1f2;
+  border: 1px solid #1da1f2;
+  color: #fff;
+  padding-right: 16px;
+  padding-left: 16px;
+}
+&__label {
+  border: 1px solid #1da1f2;
+  border-radius: 20px;
+  color: #1c94e0;
+  display: block;
+  padding: 7px 28px;
+  padding-right: 16px;
+  padding-left: 16px;
+  text-decoration: none;
+}
+&__item input[type="checkbox"]:checked + .pillList__label .Icon--checkLight {
+display: inline-block;
+}
+} 
+.clearSettings{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.buttonSearchBox{
+ 
+}
+// & input[type="checkbox"]:checked + .pillList__label .Icon--addLight,
+// .pillList__label .Icon--checkLight,
+// .pillList-children {
+//   display: none;
+// }
+// &.Icon--checkLight,
+// .pillList-children {
+//   display: none;
+// }
+// &__item input[type="checkbox"]:checked + .pillList__label .Icon--addLight,
+// .pillList__label .Icon--checkLight,
+// .pillList-children {
+//   display: none;
+// }
+// &__label .Icon {
+//   width: 12px;
+//   height: 12px;
+//   margin: 0 0 0 12px;
+// }
+// }
+// .Icon
+.Icon {
+  background: transparent;
+  display: inline-block;
+  font-style: normal;
+  vertical-align: baseline;
+  position: relative;
+  &__smallest {
+    font-size: 12px;
+    line-height: 12px;
+  }
+}
+
+
 
   // .circle {
   //   width:40px;
