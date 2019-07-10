@@ -251,11 +251,10 @@ h6 {
 }
 
 .divider__bar {
-  width: 2px;
+  width: 1px;
   height: 46%;
-  width: 2px;
   position: absolute;
-  background: #351550;
+  background: #ced4da;
   left: -1px;
 }
 
@@ -268,7 +267,34 @@ h6 {
 }
 
 .divider__or {
+  right: -25px;
   position: absolute;
   width: 50px;
   height: 50px;
+  background: #fff;
+  top: 45%;
+  border-radius: 10px;
+  padding-top: 12px;
+  z-index: 10;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  text-align: center;
+  border: 1px solid #ced4da;
+}
+
+.divider__or::before {
+  content: 'OR';
+}
+
+.signUp__right {
+  position: relative;
+}
+
+.signUp__middle {
+  display: block;
+  margin: 0 auto;
+}
+
+.signUp__verticalCenter {
+  margin-top: 45%;
 }
