@@ -244,3 +244,31 @@ h6 {
   font-size: 12px;
   line-height: 12px;
 }
+
+.divider {
+  width: 0%;
+  position: relative;
+}
+
+.divider__bar {
+  width: 2px;
+  height: 46%;
+  width: 2px;
+  position: absolute;
+  background: #351550;
+  left: -1px;
+}
+
+.divider__bar--top {
+  top: 0;
+}
+
+.divider__bar--bottom {
+  bottom: 0;
+}
+
+.divider__or {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+}

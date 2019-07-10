@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Search Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="...">
+  <meta name="author" content="">
+  <meta name="apple-mobile-web-app-title" content="">
+  <meta name="msapplication-config" content="none" />
+
+  <meta name="og:title" property="og:title" content="Lukas Zetkolek" />
+  <meta name="og:type" property="og:type" content="website" />
+  <meta name="og:image" property="og:image" content="" />
+  <meta name="og:url" property="og:url" content="" />
+
+  <meta name="twitter:card" content="" />
+  <meta name="twitter:site" content="" />
+  <meta name="twitter:title" content="" />
+  <meta name="twitter:image" content="" />
+
+  <meta name="description" content="" />
+  <meta name="og:description" property="og:description" content="" />
+  <meta name="twitter:description" content="" />
+
+  <!-- Bootstrap Core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom Fonts -->
+
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="css/style.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700" rel="stylesheet">
+
+  <link rel="icon" sizes="192x192" href="">
+  <link rel="icon" sizes="128x128" href="">
+  <link rel="apple-touch-icon" href="">
+  <link rel="apple-touch-icon-precomposed" href="">
+  <link rel='icon' sizes="32x32" href="">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light mb-3">
+    <a class="ml-5 navbar-brand" href="/">
+      <img src="./img/logo0619.svg" width="150" alt="logo reall" class="logo-reall">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+      aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo01">
+      <ul class="navbar-nav ">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Search</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Projects</a>
+        </li>
+        <li class="nav-item" href="#">
+          <a class="nav-link">Offers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Profile</a>
+        </li>
+      </ul>
+      <img src="./img/icon-user-default-profile.svg" width="40" alt="logo reall" class="mr-5 logo-reall">
+    </div>
+  </nav>
+
+  <div class="container mt-5 body-wrapper">
+    <!-- search -->
+    <section class="col-12 mainSearch">
+      <div class="wrapperBox">
+        <div class="header mt-2 mb-4">
+          <h5>Find a project or offer that suits your interests</h5>
+        </div>
+        <div class="d-flex justify-content-between">
+          <div class="input-group mb-3 mr-2">
+            <input type="text" class="form-control" placeholder="Enter for example: confectionery, cycling, cat care…"
+              aria-label="Recipient's username" aria-describedby="button-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-outline-primary" type="button" id="button-addon2">Button</button>
+            </div>
+          </div>
+          <div class="col-4 mr-0 pr-0 form-group">
+
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>city 1</option>
+              <option>city 2</option>
+              <option>city 3</option>
+              <option>city 4</option>
+              <option>city 5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="pillList mt-4">
+          <label class="pillList__item">
+            <input type="checkbox" name="feature" value="2">
+            <span class="pillList__label">interest
+              <span class="Icon Icon--checkLight Icon--smallest"><i class="ml-2 icon-close"></i></span>
+            </span>
+          </label>
+          <label class="pillList__item">
+            <input type="checkbox" name="feature" value="2">
+            <span class="pillList__label">interest
+              <span class="Icon Icon--checkLight Icon--smallest"><i class="ml-2 icon-close"></i></span>
+            </span>
+          </label>
+          <label class="pillList__item">
+            <input type="checkbox" name="feature" value="2">
+            <span class="pillList__label">interest
+              <span class="Icon Icon--checkLight Icon--smallest"><i class="ml-2 icon-close"></i></span>
+            </span>
+          </label>
+        </div>
+        <div class="d-flex justify-content-center buttonSearchBox">
+          <div class="text-center mt-4 mb-3">
+            <a class="btn btn-primary btn-lg" href="#" role="button">Search</a>
+          </div>
+          <div class="ml-3 clearSettings"><a href="/">Clear settings</a></div>
+        </div>
+      </div>
+
+    </section>
+    <!-- project offers container -->
+    <!-- offer1 -->
+    <section class="projectCardContainer d-flex">
+      <div class="col-md-4 col-sm-12 projectCardOffer">
+        <div class="projectCardOffer__pict position-relative no-gutters">
+          <img class="offer-card-img-top img-fluid " src="https://unsplash.it/480/340" alt="Card image cap">
+          <div class="projectCardContainer__folowFlag">Follow that <i class="icon-star ml-2"></i>
+          </div>
+        </div>
+        <div class="container border bg-white rounded-bottom projectCardOffer__body">
+          <h5 class="projectCardOffer__body--picture mt-4 mb-2">Learning how to pain like Picasso </h5>
+          <div class="row">
+            <div class="col-4">City:</div>
+            <div class="col-8">Wrocław</div>
+          </div>
+          <div class="row">
+            <div class="col-4">Status:</div>
+            <div class="col-8">The group began to meet on April 1 2019 </div>
+          </div>
+          <div class="row">
+            <div class="col-4">Interests:</div>
+            <div class="col-8">Culture, Art</div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-7">
+              <div class="projectCardOffer__members position-relative">
+                <ul class="list-inline mt-2">
+                  <li class="list-inline-item">
+                    <img src="https://unsplash.it/40/40" class="rounded-circle" alt="">
+                  </li>
+                  <li class="list-inline-item ">
+                    <div class="list-inline-item__scoreTo">
+                      <p>+1</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+              <a class="btn btn-primary btn-sm mt-3 float-right" href="#" role="button">More</a>
+            </div>
+          </div>
+          <div class="mb-lg-4 mt-1 projectCardOffer__upMeet upcoming-meet">
+            <h6 class="mb-3">Upcoming meetings</h6>
+            <div class="row itemApointment mb-2">
+              <div class="col-7 mr-0 pr-0 item-apointment__data">
+                <div class="itemApointment__name">
+                  <p class="p-0 m-0">We paint the still life</p>
+                </div>
+                <div class="itemApointment__time">
+                  <p class="small mb-0">17 July 2019</p>
+                </div>
+              </div>
+              <div class="col text-right mt-2">
+                <div class="btn-group" role="group" aria-label="Basic example">
+                  <button type="button" class="btn btn-secondary btn-sm">11:00</button>
+                  <button type="button" class="btn btn-primary btn-sm"><i class="icon-arrow-right"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="row itemApointment mb-2">
+              <div class="col-7 mr-0 pr-0 item-apointment__data">
+                <div class="itemApointment__name">
+                  <p class="p-0 m-0">We paint the still life</p>
+                </div>
+                <div class="itemApointment__time">
+                  <p class="small mb-0">17 July 2019</p>
+                </div>
+              </div>
+              <div class="col text-right mt-2">
+                <div class="btn-group" role="group" aria-label="Basic example">
+                  <button type="button" class="btn btn-secondary btn-sm">11:00</button>
+                  <button type="button" class="btn btn-primary btn-sm"><i class="icon-arrow-right"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12 projectCardOffer">
+        <div class="projectCardOffer__pict position-relative no-gutters">
+          <img class="offer-card-img-top img-fluid " src="https://unsplash.it/480/340" alt="Card image cap">
+          <div class="projectCardContainer__folowFlag">Follow that <i class="icon-star ml-2"></i>
+          </div>
+        </div>
+        <div class="container border bg-white rounded-bottom projectCardOffer__body">
+          <h5 class="projectCardOffer__body--picture mt-4 mb-2">Learning how to pain like Picasso </h5>
+          <div class="row">
+            <div class="col-4">City:</div>
+            <div class="col-8">Wrocław</div>
+          </div>
+          <div class="row">
+            <div class="col-4">Status:</div>
+            <div class="col-8">The group began to meet on April 1 2019 </div>
+          </div>
+          <div class="row">
+            <div class="col-4">Interests:</div>
+            <div class="col-8">Culture, Art</div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-7">
+              <div class="projectCardOffer__members position-relative">
+                <ul class="list-inline mt-2">
+                  <li class="list-inline-item">
+                    <img src="https://unsplash.it/40/40" class="rounded-circle" alt="">
+                  </li>
+                  <li class="list-inline-item ">
+                    <div class="list-inline-item__scoreTo">
+                      <p>+1</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+              <a class="btn btn-primary btn-sm mt-3 float-right" href="#" role="button">More</a>
+            </div>
+          </div>
+          <div class="mb-lg-4 mt-1 projectCardOffer__upMeet upcoming-meet">
+            <h6 class="mb-3">Upcoming meetings</h6>
+            <div class="row itemApointment mb-2">
+              <div class="col-7 mr-0 pr-0 item-apointment__data">
+                <div class="itemApointment__name">
+                  <p class="p-0 m-0">We paint the still life</p>
+                </div>
+                <div class="itemApointment__time">
+                  <p class="small mb-0">17 July 2019</p>
+                </div>
+              </div>
+              <div class="col text-right mt-2">
+                <div class="btn-group" role="group" aria-label="Basic example">
+                  <button type="button" class="btn btn-secondary btn-sm">11:00</button>
+                  <button type="button" class="btn btn-primary btn-sm"><i class="icon-arrow-right"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="row itemApointment mb-2">
+              <div class="col-7 mr-0 pr-0 item-apointment__data">
+                <div class="itemApointment__name">
+                  <p class="p-0 m-0">We paint the still life</p>
+                </div>
+                <div class="itemApointment__time">
+                  <p class="small mb-0">17 July 2019</p>
+                </div>
+              </div>
+              <div class="col text-right mt-2">
+                <div class="btn-group" role="group" aria-label="Basic example">
+                  <button type="button" class="btn btn-secondary btn-sm">11:00</button>
+                  <button type="button" class="btn btn-primary btn-sm"><i class="icon-arrow-right"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12 projectCardOffer">
+        <div class="projectCardOffer__pict position-relative no-gutters">
+          <img class="offer-card-img-top img-fluid " src="https://unsplash.it/480/340" alt="Card image cap">
+          <div class="projectCardContainer__folowFlag">Follow that <i class="icon-star ml-2"></i>
+          </div>
+        </div>
+        <div class="container border bg-white rounded-bottom projectCardOffer__body">
+          <h5 class="projectCardOffer__body--picture mt-4 mb-2">Learning how to pain like Picasso </h5>
+          <div class="row">
+            <div class="col-4">City:</div>
+            <div class="col-8">Wrocław</div>
+          </div>
+          <div class="row">
+            <div class="col-4">Status:</div>
+            <div class="col-8">The group began to meet on April 1 2019 </div>
+          </div>
+          <div class="row">
+            <div class="col-4">Interests:</div>
+            <div class="col-8">Culture, Art</div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-7">
+              <div class="projectCardOffer__members position-relative">
+                <ul class="list-inline mt-2">
+                  <li class="list-inline-item">
+                    <img src="https://unsplash.it/40/40" class="rounded-circle" alt="">
+                  </li>
+                  <li class="list-inline-item ">
+                    <div class="list-inline-item__scoreTo">
+                      <p>+1</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+              <a class="btn btn-primary btn-sm mt-3 float-right" href="#" role="button">More</a>
+            </div>
+          </div>
+          <div class="mb-lg-4 mt-1 projectCardOffer__upMeet upcoming-meet">
+            <h6 class="mb-3">Upcoming meetings</h6>
+            <div class="row itemApointment mb-2">
+              <div class="col-7 mr-0 pr-0 item-apointment__data">
+                <div class="itemApointment__name">
+                  <p class="p-0 m-0">We paint the still life</p>
+                </div>
+                <div class="itemApointment__time">
+                  <p class="small mb-0">17 July 2019</p>
+                </div>
+              </div>
+              <div class="col text-right mt-2">
+                <div class="btn-group" role="group" aria-label="Basic example">
+                  <button type="button" class="btn btn-secondary btn-sm">11:00</button>
+                  <button type="button" class="btn btn-primary btn-sm"><i class="icon-arrow-right"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="row itemApointment mb-2">
+              <div class="col-7 mr-0 pr-0 item-apointment__data">
+                <div class="itemApointment__name">
+                  <p class="p-0 m-0">We paint the still life</p>
+                </div>
+                <div class="itemApointment__time">
+                  <p class="small mb-0">17 July 2019</p>
+                </div>
+              </div>
+              <div class="col text-right mt-2">
+                <div class="btn-group" role="group" aria-label="Basic example">
+                  <button type="button" class="btn btn-secondary btn-sm">11:00</button>
+                  <button type="button" class="btn btn-primary btn-sm"><i class="icon-arrow-right"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- job offert box -->
+    <div class="mt-5 d-flex jobCardOffer">
+      <div class="col-md-4 col-sd-6 col-12">
+        <div class="border wrapperBox">
+          <div class="d-block text-right mt-2 mb-3 jobOfferCard__follow">
+            Follow job offer <i class="icon-star ml-2"></i>
+          </div>
+          <h5 class="d-block">We are looking for cook in a Chinese restaurant</h5>
+          <div class="row no-gutters mt-4 mb-3">
+            <div class="col-6 text-left mt-2 small jobOfferCard__addDate">added: 20/05/2019</div>
+            <div class="col-6 text-right jobOfferCard__seeMore button"> <a class="btn btn-outline-primary" href="#"
+                role="button">See
+                more details</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- Footer -->
+  <footer class="container">
+    <p>&copy; Company 2019</p>
+  </footer>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <!-- Custom scripts for this template -->
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>
