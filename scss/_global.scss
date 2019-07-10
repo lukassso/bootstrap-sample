@@ -285,13 +285,17 @@ bottom: 0;
 .signUp {
   &__right {
     position: relative;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
       }
   &__middle{
-    display: block;
-    margin: 0 auto;
+    // display: block;
+    // margin: 0 auto;
+   
   }
   &__verticalCenter{
-   margin-top: 45%;
+  //  margin-top: 45%;
   }
 }
 
