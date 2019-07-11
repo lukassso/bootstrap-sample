@@ -1,2 +1,6 @@
 # bootstrap-with-gulp
-bootstrap 4 with gulp 4 and frontend clear code
+simple website to official presentation startup project
+link to website: https://www.positive-aal.com/
+
+stack: 
+clear HTML/CSS
