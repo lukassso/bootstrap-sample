@@ -292,20 +292,216 @@ bottom: 0;
 
 }
 
+.main2 {
+  font-size: 1rem;
+  background-color: $white;
+  &__hero {
+    position: relative;
+    padding: 80px 0 45px;
+    margin: 0;
+    background: radial-gradient(#7F4EBC, #5F3397);
+    color: $white;
+    line-height: 28px;
+    &--imgHero {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding: 0;
+      margin: 0;
+    }
+    &--boxWrapper {
+      position: relative;
+    }
 
-  // .circle {
-  //   width:40px;
-  //   height: 40px;
-  //   border-radius: 1px solid;
-  //   background-color: black;
-  // }
+    &--claim1 {
+      padding-top: 70px;
+      padding-bottom: 25px;
 
-  // .circle.outer {
-  //     position: relative;
-  // }
+      & h1 {
+        font-size: 1.9rem;
+        font-weight: 200;
+        line-height: 40px;
+      }
+    }
 
-  // .inner {
-  //     position: absolute;
-  //     left: 50%;
-  //     border: 3px solid #fff;
-  // }
+    &--claim2 {
+      & ul {
+        padding-left: 24px;
+        list-style: none;
+        list-style-image: url("../static/icon-itemLi.svg");
+      }
+
+      & li {
+        padding-bottom: 10px;
+        padding-left: 10px;
+        font-size: 1rem;
+      }
+    }
+  }
+
+  &__btnWhite {
+    padding: 20px 65px;
+    background: $white;
+    color: $reall;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    font-weight: 600;
+
+    &:hover {
+      background: $reall;
+      border: 1px solid $white;
+      color: $white;
+      font-weight: 600;
+    }
+  }
+
+  &__whatCan {
+    margin-top: 80px;
+    padding-bottom: 50px;
+    &--header {
+      padding-bottom: 17px;
+      border-bottom: 1px solid $reall;
+      position: relative;
+    }
+
+    & p {
+      font-size: 1rem;
+      line-height: 30px;
+      text-align: center;
+      font-weight: 400;
+    }
+
+    & h2 {
+      font-size: 1.4rem;
+    }
+
+    &--item {
+      margin-top: 60px;
+      position: relative;
+
+    }
+
+    &--iconWhatCan {
+      position: relative;
+      height: auto;
+      display: block;
+      margin-bottom: 20px;
+
+      & img {
+        z-index: -10;
+        border-radius: 75px;
+        border: 1px solid $reall;
+        background-color: $white;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  &__3in1 {
+    position: relative;
+    background-image: url("../static/bcg-index2.jpg");
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: $white;
+
+    &:before {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(93, 47, 149, 0.9);
+    }
+
+    &--whatIs {
+      padding: 50px 0 50px;
+      font-size: 1.1rem;
+
+      & h2 {
+        padding-bottom: 20px;
+      }
+    }
+
+    &--steps {
+      background-color: #FFD700;
+      color: $reall;
+      padding-top: 40px;
+      z-index: 1;
+    }
+
+    &--stepsWrapper {
+      margin-top: 40px;
+      margin-bottom: 15px;
+    }
+
+    &--picture {
+      position: relative;
+      font-size: 2rem;
+      font-weight: 400;
+      height: 75px;
+      color: $white;
+      margin: 0 auto;
+      padding: 0;
+      align-content: center;
+    }
+
+    &--pictureNo {
+      position: absolute;
+      content: "";
+      background: #4C2E7D;
+      border-radius: 100%;
+      width: 70px;
+      height: 70px;
+      z-index: -1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &--text {
+      margin-top: 15px;
+    }
+    &--signUp {
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__btnSignUp {
+    padding: 20px 65px;
+    background: #fff;
+    color: $reall;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    font-weight: 600;
+    &:hover {
+      background: $reall;
+      border: 1px solid $white;
+      color: $white;
+      font-weight: 600;
+    }
+  }
+  &__divider {
+    position: absolute;
+    content: '';
+    top: 51px;
+    left: 50%;
+    width: 1px;
+    height: 140px;
+    background: $reall;
+  }
+  &__divider2 {
+    // position: absolute;
+    content: '';
+    bottom: -140px;
+    position: absolute;
+    right: 30%;
+    width: 35%;
+    height: 1px;
+    background: #4C2E7D;
+  }
+}
